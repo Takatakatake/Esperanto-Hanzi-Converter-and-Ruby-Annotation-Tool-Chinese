@@ -36,19 +36,21 @@ from esp_text_replacement_module import (
 )
 
 
-st.title("エスペラント文を漢字置換したり、HTML形式の訳ルビを振ったりする (拡張版)")
+# ↓↓↓ (ユーザーに直接見える部分のみを中国語化) ↓↓↓
+
+st.title("将世界语文本转换为汉字或添加 Ruby 注释 (扩展版)")
 
 # 1) JSONファイル (置換ルール) をロードする (デフォルト or アップロード)
 selected_option = st.radio(
-    "JSONファイルをどうしますか？ (置換用JSONファイルの読み込み)",
-    ("デフォルトを使用する", "アップロードする")
+    "请选择如何处理 JSON 文件 (读取用于替换的 JSON 文件)",
+    ("使用默认设置", "上传")
 )
 
 replacements_final_list: List[Tuple[str, str, str]] = []
 replacements_list_for_localized_string: List[Tuple[str, str, str]] = []
 replacements_list_for_2char: List[Tuple[str, str, str]] = []
 
-if selected_option == "デフォルトを使用する":
+if selected_option == "使用默认设置":
     default_json_path = "./Appの运行に使用する各类文件/最终的な替换用リスト(列表)(合并3个JSON文件).json"
     try:
         with open(default_json_path, 'r', encoding='utf-8') as f:
@@ -59,12 +61,12 @@ if selected_option == "デフォルトを使用する":
                 "局部文字替换用のリスト(列表)型配列(replacements_list_for_localized_string)", [])
             replacements_list_for_2char = combined_data.get(
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
-        st.success("デフォルトJSONの読み込みに成功しました。")
+        st.success("默认 JSON 文件读取成功。")
     except Exception as e:
-        st.error(f"JSONファイルの読み込みに失敗: {e}")
+        st.error(f"读取 JSON 文件时出错：{e}")
         st.stop()
 else:
-    uploaded_file = st.file_uploader("JSONファイルをアップロード (合并3个JSON文件).json 形式)", type="json")
+    uploaded_file = st.file_uploader("上传 JSON 文件 (格式: 合并3个JSON文件).json", type="json")
     if uploaded_file is not None:
         try:
             combined_data = json.load(uploaded_file)
@@ -74,15 +76,15 @@ else:
                 "局部文字替换用のリスト(列表)型配列(replacements_list_for_localized_string)", [])
             replacements_list_for_2char = combined_data.get(
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
-            st.success("アップロードしたJSONの読み込みに成功しました。")
+            st.success("成功读取已上传的 JSON 文件。")
         except Exception as e:
-            st.error(f"アップロードJSONファイルの読み込みに失敗: {e}")
+            st.error(f"读取已上传的 JSON 文件时出错：{e}")
             st.stop()
     else:
-        st.warning("JSONファイルがアップロードされていません。処理を停止します。")
+        st.warning("尚未上传 JSON 文件。操作已停止。")
         st.stop()
 
-# 2) placeholders (占位符) の読み込み
+# 2) placeholders (占位符) の読み込み (※ユーザーに見えない部分はそのまま)
 placeholders_for_skipping_replacements: List[str] = import_placeholders(
     './Appの运行に使用する各类文件/占位符(placeholders)_%1854%-%4934%_文字列替换skip用.txt'
 )
@@ -91,16 +93,16 @@ placeholders_for_localized_replacement: List[str] = import_placeholders(
 )
 
 # 3) 設定パラメータ (UI) - 高度な設定
-st.subheader("高度な設定 (並列処理)")
-with st.expander("詳細設定を開く"):
-    use_parallel = st.checkbox("並列処理を使う (テキストが多い場合に高速化)", value=False)
-    num_processes = st.number_input("同時プロセス数 (CPUコア数や環境による)", min_value=1, max_value=6, value=4, step=1)
+st.subheader("高级设置 (并行处理)")
+with st.expander("展开详细设置"):
+    use_parallel = st.checkbox("使用并行处理（在文本量较大时可以加快速度）", value=False)
+    num_processes = st.number_input("同时进程数（取决于 CPU 内核数和环境）", min_value=1, max_value=6, value=4, step=1)
 
 st.write("---")
 
 # 例: 出力形式など。必要に応じて追加カスタマイズ
 format_type = st.selectbox(
-    "出力形式を選択(置換用のJSONファイルを作成したときと同じ形式を選択):",
+    "请选择输出格式（请选择与生成用于替换的 JSON 文件相同的格式）:",
     [
         "HTML格式_Ruby文字_大小调整",
         "HTML格式_Ruby文字_大小调整_汉字替换",
@@ -116,17 +118,17 @@ format_type = st.selectbox(
 processed_text = ""
 
 # 4) 入力テキストのソースを選択 (アップロード or テキストエリア)
-st.subheader("入力テキストのソース")
-source_option = st.radio("入力テキストをどうしますか？", ("手動入力", "ファイルアップロード"))
+st.subheader("输入文本来源")
+source_option = st.radio("如何获取输入文本？", ("手动输入", "文件上传"))
 
 uploaded_text = ""
-if source_option == "ファイルアップロード":
-    text_file = st.file_uploader("テキストファイルをアップロード (UTF-8)", type=["txt", "csv", "md"])
+if source_option == "文件上传":
+    text_file = st.file_uploader("上传文本文件 (UTF-8)", type=["txt", "csv", "md"])
     if text_file is not None:
         uploaded_text = text_file.read().decode("utf-8", errors="replace")
-        st.info("ファイルを読み込みました。")
+        st.info("已读取文件。")
     else:
-        st.warning("テキストファイルがアップロードされていません。手動入力に切り替えるかファイルをアップロードしてください。")
+        st.warning("尚未上传文本文件。请切换到手动输入或者上传文件。")
 
 # ------------------------------------------------
 # session_state を使って、ユーザーが再設定時にも
@@ -137,9 +139,9 @@ if "text0_value" not in st.session_state:
 
 with st.form(key='text_input_form'):
     # ここでテキストエリアのデフォルト値を session_state から取得
-    if source_option == "手動入力":
+    if source_option == "手动输入":
         text0 = st.text_area(
-            "エスペラントの文章を入力してください",
+            "请输入世界语文本",
             height=150,
             value=st.session_state["text0_value"]
         )
@@ -149,16 +151,19 @@ with st.form(key='text_input_form'):
             # セッションステートが空なら、アップロードテキストを初期設定
             st.session_state["text0_value"] = uploaded_text
         text0 = st.text_area(
-            "エスペラントの文章(ファイル読み込み済み)",
+            "世界语文本（已从文件读取）",
             value=st.session_state["text0_value"],
             height=150
         )
-    st.markdown("""「%」で前後を囲む(「%<50文字以内の文字列>%」形式)と、「%」で囲まれた部分は文字列(漢字)置換せず、元のまま保持することができます。""")
-    st.markdown("""また、「@」で前後を囲む(「@<18文字以内の文字列>@」形式)と、「@」で囲まれた部分を局所的に文字列(漢字)置換します。""")
-    letter_type = st.radio('出力文字形式', ('上付き文字', 'x 形式', '^形式'))
+    st.markdown("""如果使用「%」包围前后（「%<50字以内字符串>%」的形式），则被「%」包围的部分将不会进行汉字替换，而是保留原样。""")
+    st.markdown("""此外，如果使用「@」包围前后（「@<18字以内字符串>@」的形式），则被「@」包围的部分会局部进行汉字替换。""")
+    letter_type = st.radio('输出字符形式', ('上标字符', 'x 形式', '^形式'))
 
-    submit_btn = st.form_submit_button('送信')
-    cancel_btn = st.form_submit_button('キャンセル')
+    submit_btn = st.form_submit_button('提交')
+    cancel_btn = st.form_submit_button('取消')
+
+# ↑↑↑ (ユーザーに直接見える部分のみを中国語化) ↑↑↑
+
 
     if submit_btn:
         # ユーザーが送信ボタンを押した時点で、text0 の値を session_state に保存
