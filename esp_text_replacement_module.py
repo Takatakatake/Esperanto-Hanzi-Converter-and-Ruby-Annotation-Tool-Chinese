@@ -421,24 +421,6 @@ def apply_ruby_html_header_and_footer(processed_text: str, format_type: str) -> 
       padding: 0 !important;
     }
 
-    /* ▼ ルビサイズクラス（例） */
-    .ruby-XXXS_S { --ruby-font-size: 30%; }
-    .ruby-XXS_S { --ruby-font-size: 30%; }
-    .ruby-XS_S  { --ruby-font-size: 30%; }
-    .ruby-S_S   { --ruby-font-size: 40%; }
-    .ruby-M_M   { --ruby-font-size: 50%; }
-    .ruby-L_L   { --ruby-font-size: 60%; }
-    .ruby-XL_L  { --ruby-font-size: 70%; }
-    .ruby-XXL_L { --ruby-font-size: 80%; }
-    .RUBY-XXXS_S { --ruby-font-size: 30%; }
-    .RUBY-XXS_S { --ruby-font-size: 30%; }
-    .RUBY-XS_S  { --ruby-font-size: 30%; }
-    .RUBY-S_S   { --ruby-font-size: 40%; }
-    .RUBY-M_M   { --ruby-font-size: 50%; }
-    .RUBY-L_L   { --ruby-font-size: 60%; }
-    .RUBY-XL_L  { --ruby-font-size: 70%; }
-    .RUBY-XXL_L { --ruby-font-size: 80%; }
-
     /* ▼ 追加マイナス余白（ルビサイズ別に上書き） */
     rt {
       display: block !important;
@@ -449,59 +431,40 @@ def apply_ruby_html_header_and_footer(processed_text: str, format_type: str) -> 
       /* margin-top: 0.2em !important;   
       transform: translateY(0.4em) !important; */
     }
-    rt.ruby-XXXS_S {
+    rt.XXXS_S {
+      --ruby-font-size: 30%;
       margin-top: -0em !important;/*結局ここは0が一番良かった。 */
       transform: translateY(-6.6em) !important;/* ルビの高さ位置はここで調節する。 */
     }    
-    rt.ruby-XXS_S {
+    rt.XXS_S {
+      --ruby-font-size: 30%;
       margin-top: -0em !important;/*結局ここは0が一番良かった。 */
       transform: translateY(-5.6em) !important;/* ルビの高さ位置はここで調節する。 */
     }
-    rt.ruby-XS_S {
+    rt.XS_S {
+      --ruby-font-size: 30%;
       transform: translateY(-4.6em) !important;
     }
-    rt.ruby-S_S {
+    rt.S_S {
+      --ruby-font-size: 40%;
       transform: translateY(-3.7em) !important;
     }
-    rt.ruby-M_M {
+    rt.M_M {
+      --ruby-font-size: 50%;
       transform: translateY(-3.1em) !important;
     }
-    rt.ruby-L_L {
+    rt.L_L {
+      --ruby-font-size: 60%; 
       transform: translateY(-2.8em) !important;
     }
-    rt.ruby-XL_L {
+    rt.XL_L {
+      --ruby-font-size: 70%;
       transform: translateY(-2.5em) !important;
     }
-    rt.ruby-XXL_L {
+    rt.XXL_L {
+      --ruby-font-size: 80%;
       transform: translateY(-2.3em) !important;
     }
-    rt.RUBY-XXXS_S {
-      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
-      transform: translateY(-6.6em) !important;/* ルビの高さ位置はここで調節する。 */
-    }    
-    rt.RUBY-XXS_S {
-      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
-      transform: translateY(-5.6em) !important;/* ルビの高さ位置はここで調節する。 */
-    }
-    rt.RUBY-XS_S {
-      transform: translateY(-4.6em) !important;
-    }
-    rt.RUBY-S_S {
-      transform: translateY(-3.7em) !important;
-    }
-    rt.RUBY-M_M {
-      transform: translateY(-3.1em) !important;
-    }
-    rt.RUBY-L_L {
-      transform: translateY(-2.8em) !important;
-    }
-    rt.RUBY-XL_L {
-      transform: translateY(-2.5em) !important;
-    }
-    rt.RUBY-XXL_L {
-      transform: translateY(-2.3em) !important;
-    }
-
 
   </style>
 </head>
