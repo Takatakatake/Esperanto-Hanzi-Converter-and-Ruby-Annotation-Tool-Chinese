@@ -9,48 +9,53 @@ import json
 import pandas as pd  # 必要なら使う
 from typing import List, Dict, Tuple, Optional
 import multiprocessing
+import streamlit.components.v1 as components
+
 
 from esp_text_replacement_module import (
     x_to_circumflex,
-    circumflex_to_x,
     x_to_hat,
-    hat_to_x,
     hat_to_circumflex,
     circumflex_to_hat,
 
     replace_esperanto_chars,
-    convert_to_circumflex,
-    unify_halfwidth_spaces,
-    wrap_text_with_ruby,
-    safe_replace,
     import_placeholders,
 
-    find_percent_enclosed_strings_for_skipping_replacement,
-    create_replacements_list_for_intact_parts,
-    find_at_enclosed_strings_for_localized_replacement,
-    create_replacements_list_for_localized_replacement,
-
     orchestrate_comprehensive_esperanto_text_replacement,
-    process_segment,
-    parallel_process
+    parallel_process,
+    apply_ruby_html_header_and_footer
 )
 
+# ページ設定
+st.set_page_config(page_title="用于世界语文本（含汉字）替换的工具", layout="wide")
 
-# ↓↓↓ (ユーザーに直接見える部分のみを中国語化) ↓↓↓
+st.title("处理世界语文本的汉字替换与 HTML 形式注解（扩展版）")
 
-st.title("将世界语文本转换为汉字或添加 Ruby 注释 (扩展版)")
+st.write("---")
 
 # 1) JSONファイル (置換ルール) をロードする (デフォルト or アップロード)
 selected_option = st.radio(
-    "请选择如何处理 JSON 文件 (读取用于替换的 JSON 文件)",
-    ("使用默认设置", "上传")
+    "要如何处理 JSON 文件？(读取替换用 JSON 文件)",
+    ("使用默认文件", "上传文件")
 )
+
+with st.expander("**示例 JSON 文件（替换用 JSON 文件）**"):
+    # サンプルファイルのパス
+    json_file_path = './Appの运行に使用する各类文件/最终的な替换用リスト(列表)(合并3个JSON文件).json'
+    # JSONファイルを読み込んでダウンロードボタンを生成
+    with open(json_file_path, "rb") as file_json:
+        btn_json = st.download_button(
+            label="下载示例替换用 JSON 文件",
+            data=file_json,
+            file_name="替换用JSON文件示例.json",
+            mime="application/json"
+        )
 
 replacements_final_list: List[Tuple[str, str, str]] = []
 replacements_list_for_localized_string: List[Tuple[str, str, str]] = []
 replacements_list_for_2char: List[Tuple[str, str, str]] = []
 
-if selected_option == "使用默认设置":
+if selected_option == "使用默认文件":
     default_json_path = "./Appの运行に使用する各类文件/最终的な替换用リスト(列表)(合并3个JSON文件).json"
     try:
         with open(default_json_path, 'r', encoding='utf-8') as f:
@@ -61,12 +66,12 @@ if selected_option == "使用默认设置":
                 "局部文字替换用のリスト(列表)型配列(replacements_list_for_localized_string)", [])
             replacements_list_for_2char = combined_data.get(
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
-        st.success("默认 JSON 文件读取成功。")
+        st.success("成功读取默认的 JSON 文件。")
     except Exception as e:
-        st.error(f"读取 JSON 文件时出错：{e}")
+        st.error(f"读取 JSON 文件失败: {e}")
         st.stop()
 else:
-    uploaded_file = st.file_uploader("上传 JSON 文件 (格式: 合并3个JSON文件).json", type="json")
+    uploaded_file = st.file_uploader("上传 JSON 文件（合并3个JSON文件）.json 格式", type="json")
     if uploaded_file is not None:
         try:
             combined_data = json.load(uploaded_file)
@@ -78,13 +83,13 @@ else:
                 "二文字词根替换用のリスト(列表)型配列(replacements_list_for_2char)", [])
             st.success("成功读取已上传的 JSON 文件。")
         except Exception as e:
-            st.error(f"读取已上传的 JSON 文件时出错：{e}")
+            st.error(f"读取已上传的 JSON 文件失败: {e}")
             st.stop()
     else:
-        st.warning("尚未上传 JSON 文件。操作已停止。")
+        st.warning("尚未上传 JSON 文件，停止处理。")
         st.stop()
 
-# 2) placeholders (占位符) の読み込み (※ユーザーに見えない部分はそのまま)
+# 2) placeholders (占位符) の読み込み
 placeholders_for_skipping_replacements: List[str] = import_placeholders(
     './Appの运行に使用する各类文件/占位符(placeholders)_%1854%-%4934%_文字列替换skip用.txt'
 )
@@ -92,17 +97,23 @@ placeholders_for_localized_replacement: List[str] = import_placeholders(
     './Appの运行に使用する各类文件/占位符(placeholders)_@5134@-@9728@_局部文字列替换结果捕捉用.txt'
 )
 
-# 3) 設定パラメータ (UI) - 高度な設定
-st.subheader("高级设置 (并行处理)")
-with st.expander("展开详细设置"):
-    use_parallel = st.checkbox("使用并行处理（在文本量较大时可以加快速度）", value=False)
-    num_processes = st.number_input("同时进程数（取决于 CPU 内核数和环境）", min_value=1, max_value=6, value=4, step=1)
+
+st.write("---")
+
+# 設定パラメータ (UI) - 高度な設定
+st.header("高级设置（并行处理）")
+with st.expander("展开并行处理的详细设置"):
+    st.write("""
+            在此可设置在替换世界语文本（含汉字）时使用的并行处理进程数。  
+            """)
+    use_parallel = st.checkbox("启用并行处理", value=False)
+    num_processes = st.number_input("并行进程数", min_value=2, max_value=6, value=4, step=1)
 
 st.write("---")
 
 # 例: 出力形式など。必要に応じて追加カスタマイズ
 format_type = st.selectbox(
-    "请选择输出格式（请选择与生成用于替换的 JSON 文件相同的格式）:",
+    "请选择输出格式（与创建替换用 JSON 文件时相同）：",
     [
         "HTML格式_Ruby文字_大小调整",
         "HTML格式_Ruby文字_大小调整_汉字替换",
@@ -119,26 +130,21 @@ processed_text = ""
 
 # 4) 入力テキストのソースを選択 (アップロード or テキストエリア)
 st.subheader("输入文本来源")
-source_option = st.radio("如何获取输入文本？", ("手动输入", "文件上传"))
+source_option = st.radio("如何提供输入文本？", ("手动输入", "上传文件"))
 
 uploaded_text = ""
-if source_option == "文件上传":
-    text_file = st.file_uploader("上传文本文件 (UTF-8)", type=["txt", "csv", "md"])
+if source_option == "上传文件":
+    text_file = st.file_uploader("上传文本文件（UTF-8 编码）", type=["txt", "csv", "md"])
     if text_file is not None:
         uploaded_text = text_file.read().decode("utf-8", errors="replace")
-        st.info("已读取文件。")
+        st.info("文件已读取。")
     else:
-        st.warning("尚未上传文本文件。请切换到手动输入或者上传文件。")
+        st.warning("尚未上传文本文件。请切换为手动输入或上传文件。")
 
-# ------------------------------------------------
-# session_state を使って、ユーザーが再設定時にも
-# 入力したテキストが消えないようにする例 (あえてやるなら)
-# ------------------------------------------------
 if "text0_value" not in st.session_state:
     st.session_state["text0_value"] = ""
 
 with st.form(key='text_input_form'):
-    # ここでテキストエリアのデフォルト値を session_state から取得
     if source_option == "手动输入":
         text0 = st.text_area(
             "请输入世界语文本",
@@ -146,27 +152,23 @@ with st.form(key='text_input_form'):
             value=st.session_state["text0_value"]
         )
     else:
-        # アップロード済みテキスト
         if not st.session_state["text0_value"] and uploaded_text:
-            # セッションステートが空なら、アップロードテキストを初期設定
             st.session_state["text0_value"] = uploaded_text
         text0 = st.text_area(
             "世界语文本（已从文件读取）",
             value=st.session_state["text0_value"],
             height=150
         )
-    st.markdown("""如果使用「%」包围前后（「%<50字以内字符串>%」的形式），则被「%」包围的部分将不会进行汉字替换，而是保留原样。""")
-    st.markdown("""此外，如果使用「@」包围前后（「@<18字以内字符串>@」的形式），则被「@」包围的部分会局部进行汉字替换。""")
-    letter_type = st.radio('输出字符形式', ('上标字符', 'x 形式', '^形式'))
+
+    st.markdown("""如果以「%」(格式为「%<不超过 50 个字符>%」)包裹文本，则该部分不会被替换，会保留原样。""")
+    st.markdown("""此外，如果以「@」(格式为「@<不超过 18 个字符>@」)包裹文本，则该部分将执行局部的汉字替换。""")
+
+    letter_type = st.radio('请选择输出的世界语字符形式', ('上标格式', 'x 形式', '^形式'))
 
     submit_btn = st.form_submit_button('提交')
     cancel_btn = st.form_submit_button('取消')
 
-# ↑↑↑ (ユーザーに直接見える部分のみを中国語化) ↑↑↑
-
-
     if submit_btn:
-        # ユーザーが送信ボタンを押した時点で、text0 の値を session_state に保存
         st.session_state["text0_value"] = text0
 
         if use_parallel:
@@ -192,120 +194,39 @@ with st.form(key='text_input_form'):
             )
 
         # letter_typeに応じて再変換
-        if letter_type == '上付き文字':
+        if letter_type == '上標格式':
             processed_text = replace_esperanto_chars(processed_text, x_to_circumflex)
             processed_text = replace_esperanto_chars(processed_text, hat_to_circumflex)
         elif letter_type == '^形式':
             processed_text = replace_esperanto_chars(processed_text, x_to_hat)
             processed_text = replace_esperanto_chars(processed_text, circumflex_to_hat)
 
-        if format_type in ('HTML格式_Ruby文字_大小调整','HTML格式_Ruby文字_大小调整_汉字替换'):
-            ruby_style_head = """<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ほとんどの環境で動作するルビ表示</title>
-<style>
-
-    :root {
-    --ruby-color: blue;
-    --ruby-font-size: 50%;
-    }
-
-    .text-S_S { font-size: 12px; }
-    .text-M_M {
-    font-size: 16px; 
-    font-family: Arial, sans-serif;
-    line-height: 1.6 !important; 
-    display: block; 
-    position: relative;
-    }
-    .text-L_L { font-size: 20px; }
-    .text-X_X { font-size: 24px; }
-    ruby {
-    display: inline-flex;
-    flex-direction: column;
-    align-items: center;
-    vertical-align: top !important;
-    line-height: 1.2 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    }
-    .ruby-XXXS_S { --ruby-font-size: 30%; }
-    .ruby-XXS_S { --ruby-font-size: 30%; }
-    .ruby-XS_S  { --ruby-font-size: 30%; }
-    .ruby-S_S   { --ruby-font-size: 40%; }
-    .ruby-M_M   { --ruby-font-size: 50%; }
-    .ruby-L_L   { --ruby-font-size: 60%; }
-    .ruby-XL_L  { --ruby-font-size: 70%; }
-    .ruby-XXL_L { --ruby-font-size: 80%; }
-    rt {
-    display: block !important;
-    font-size: var(--ruby-font-size);
-    color: var(--ruby-color);
-    line-height: 1.05;
-    text-align: center;
-    }
-    rt.ruby-XXXS_S {
-    transform: translateY(-6.6em) !important;
-    }    
-    rt.ruby-XXS_S {
-    transform: translateY(-5.6em) !important;
-    }
-    rt.ruby-XS_S {
-    transform: translateY(-4.6em) !important;
-    }
-    rt.ruby-S_S {
-    transform: translateY(-3.7em) !important;
-    }
-    rt.ruby-M_M {
-    transform: translateY(-3.1em) !important;
-    }
-    rt.ruby-L_L {
-    transform: translateY(-2.8em) !important;
-    }
-    rt.ruby-XL_L {
-    transform: translateY(-2.5em) !important;
-    }
-    rt.ruby-XXL_L {
-    transform: translateY(-2.3em) !important;
-    }
-
-</style>
-</head>
-<body>
-<p class="text-M_M">
-"""
-            ruby_style_tail = "</p></body></html>"
-        elif format_type in ('HTML格式','HTML格式_汉字替换'):
-            ruby_style_head = """<style>
-ruby rt {
-    color: blue;
-}
-</style>
-"""
-            ruby_style_tail = "<br>"
-        else:
-            ruby_style_head = ""
-            ruby_style_tail = ""
-
-        processed_text = ruby_style_head + processed_text + ruby_style_tail
+        processed_text = apply_ruby_html_header_and_footer(processed_text, format_type)
 
 # =========================================
 # フォーム外の処理: 結果表示・ダウンロード
 # =========================================
 if processed_text:
-    st.text_area("文字列置換後のテキスト(プレビュー)", processed_text, height=300)
+
+    if "HTML" in format_type:
+        tab1, tab2 = st.tabs(["HTML 预览", "替换结果（HTML 源代码）"])
+        with tab1:
+            components.html(processed_text, height=500, scrolling=True)
+        with tab2:
+            st.text_area("", processed_text, height=300)
+    else:
+        tab3_list = st.tabs(["替换后的文本"])
+        with tab3_list[0]:
+            st.text_area("", processed_text, height=300)
 
     download_data = processed_text.encode('utf-8')
     st.download_button(
-        label="ダウンロード (HTML)",
+        label="下载替换结果",
         data=download_data,
-        file_name="processed_text.html",
+        file_name="替换结果.html",
         mime="text/html"
     )
 
 st.write("---")
-st.title("アプリのGitHubリポジトリ")
-st.markdown("https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-")
+st.title("应用的 GitHub 仓库")
+st.markdown("https://github.com/Takatakatake/Esperanto-Hanzi-Converter-and-Ruby-Annotation-Tool-Chinese")

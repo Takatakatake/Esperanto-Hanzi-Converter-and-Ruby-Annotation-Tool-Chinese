@@ -369,3 +369,129 @@ def parallel_process(text: str, num_processes: int ,
                 for (start, end) in ranges])
     # 結果を結合
     return '\n'.join(results)
+
+
+## 追加
+
+def apply_ruby_html_header_and_footer(processed_text: str, format_type: str) -> str:
+    """
+    指定された出力形式に応じて、processed_text に対するHTMLヘッダーとフッターを適用する。
+    
+    Args:
+        processed_text (str): 既に生成された置換後のテキスト（HTMLの一部）。
+        format_type (str): 出力形式。例えば、'HTML格式_Ruby文字_大小调整' など。
+        
+    Returns:
+        str: ヘッダーとフッターが付加された最終的なHTMLテキスト。
+    """
+    if format_type in ('HTML格式_Ruby文字_大小调整','HTML格式_Ruby文字_大小调整_汉字替换'):
+        # html形式におけるルビサイズの変更形式
+        ruby_style_head="""<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ほとんどの環境で動作するルビ表示</title>
+  <style>
+
+    :root {
+      --ruby-color: blue;
+      --ruby-font-size: 50%;
+    }
+
+    .text-S_S { font-size: 12px; }
+    .text-M_M {
+      font-size: 16px; 
+      font-family: Arial, sans-serif;
+      line-height: 1.6 !important; 
+      display: block; /* ブロック要素として扱う */
+      position: relative;
+    }
+    .text-L_L { font-size: 20px; }
+    .text-X_X { font-size: 24px; }
+
+    /* ▼ ルビ（フレックスでルビを上に表示） */
+    ruby {
+      display: inline-flex;
+      flex-direction: column;
+      align-items: center;
+      vertical-align: top !important;
+      line-height: 1.2 !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+
+    /* ▼ ルビサイズクラス（例） */
+    .ruby-XXXS_S { --ruby-font-size: 30%; }
+    .ruby-XXS_S { --ruby-font-size: 30%; }
+    .ruby-XS_S  { --ruby-font-size: 30%; }
+    .ruby-S_S   { --ruby-font-size: 40%; }
+    .ruby-M_M   { --ruby-font-size: 50%; }
+    .ruby-L_L   { --ruby-font-size: 60%; }
+    .ruby-XL_L  { --ruby-font-size: 70%; }
+    .ruby-XXL_L { --ruby-font-size: 80%; }
+
+    /* ▼ 追加マイナス余白（ルビサイズ別に上書き） */
+    rt {
+      display: block !important;
+      font-size: var(--ruby-font-size);
+      color: var(--ruby-color);
+      line-height: 1.05;/*ルビを改行するケースにおけるルビの行間*/
+      text-align: center;
+      /* margin-top: 0.2em !important;   
+      transform: translateY(0.4em) !important; */
+    }
+    rt.ruby-XXXS_S {
+      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
+      transform: translateY(-6.6em) !important;/* ルビの高さ位置はここで調節する。 */
+    }    
+    rt.ruby-XXS_S {
+      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
+      transform: translateY(-5.6em) !important;/* ルビの高さ位置はここで調節する。 */
+    }
+    rt.ruby-XS_S {
+      transform: translateY(-4.6em) !important;
+    }
+    rt.ruby-S_S {
+      transform: translateY(-3.7em) !important;
+    }
+    rt.ruby-M_M {
+      transform: translateY(-3.1em) !important;
+    }
+    rt.ruby-L_L {
+      transform: translateY(-2.8em) !important;
+    }
+    rt.ruby-XL_L {
+      transform: translateY(-2.5em) !important;
+    }
+    rt.ruby-XXL_L {
+      transform: translateY(-2.3em) !important;
+    }
+
+  </style>
+</head>
+<body>
+  <p class="text-M_M">
+"""
+        ruby_style_tail = "</p></body></html>"
+    elif format_type in ('HTML格式','HTML格式_汉字替换'):
+        ruby_style_head = """<style>
+ruby rt {
+    color: blue;
+}
+</style>
+"""
+        ruby_style_tail = "<br>"
+    else:
+        ruby_style_head = ""
+        ruby_style_tail = ""
+    
+    return ruby_style_head + processed_text + ruby_style_tail
+
+
+# --- 使用例 ---
+# たとえば、既に生成済みの processed_text がある場合
+# format_type = 'HTML格式_Ruby文字_大小调整'
+# final_text = apply_ruby_style(processed_text, format_type)
+# st.write(final_text)  # または st.components.v1.html(final_text, height=500)
+

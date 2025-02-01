@@ -1,0 +1,7 @@
+# .streamlit/config.toml
+[theme]
+primaryColor = "#FFB347"             # オレンジ寄りの「メインカラー」
+backgroundColor = "#FFF5EB"          # やわらかい薄オレンジ（背景色）
+secondaryBackgroundColor = "#FFEBD3" # 背景より少しだけ濃い色
+textColor = "#444444"                # ダークグレー（文字色）
+font = "sans serif"
