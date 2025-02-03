@@ -67,13 +67,28 @@ with st.expander("示例文件一览（可下载）"):
         )
 
     st.markdown("""
-    **示例CSV2（世界语词根→汉字对应列表）**  
+    **样例 CSV2（世界语词根与汉字对照列表 —— 来自知乎的世界语爱好者 Mingeo 先生的汉字化方案）**  
+    这是一个将世界语词根与汉字对应起来的 CSV 文件。
+    """)
+    # サンプルファイルのパス（保持原代码不变）
+    file_path0 = './Appの运行に使用する各类文件/Mingeo_san_hanziization.csv'
+    # 读取文件并创建下载按钮
+    with open(file_path0, "rb") as file:
+        btn = st.download_button(
+                label="样例CSV2（世界语词根与汉字对照列表＿Mingeo先生）下载",
+                data=file,
+                file_name="世界语词根与汉字对照列表＿Mingeo先生.csv",
+                mime="text/csv"
+            )
+
+    st.markdown("""
+    **示例CSV3（世界语词根→汉字对应列表）**  
     此示例文件展示了如何将世界语词根与汉字对应起来。
     """)
     file_path0 = './Appの运行に使用する各类文件/エスペラント語根漢字対応リスト.csv'
     with open(file_path0, "rb") as file:
         st.download_button(
-            label="下载示例CSV2（世界语词根与汉字对应列表）",
+            label="下载示例CSV3（世界语词根与汉字对应列表）",
             data=file,
             file_name="世界语词根与汉字对应列表.csv",
             mime="text/csv"
