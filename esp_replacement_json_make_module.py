@@ -368,3 +368,33 @@ def parallel_build_pre_replacements_dict(
                 merged_dict[E_root] = [existing_replaced_stem, pos_merged_str]
 
     return merged_dict
+
+
+# 追加(202502)
+IDENTICAL_RUBY_PATTERN = re.compile(r'<ruby>([^<]+)<rt class="XXL_L">([^<]+)</rt></ruby>')
+def remove_redundant_ruby_if_identical(text: str) -> str:
+    """
+    入力文字列中の <ruby>{1}<rt class="XXL_L">{2}</rt></ruby> を探し、
+    {1} と {2} が完全一致している場合に、それらを {1} のみ
+    (つまり <ruby>～</ruby> を取り除いて {1} に) 置換して返す関数。
+    
+    一致しない場合には置換を行わず、そのままのタグ構造を保持。
+    """
+
+    def replacer(match: re.Match) -> str:
+        group1 = match.group(1)  # <ruby> 直後〜<rt class="XXL_L"> の手前にある文字列 ( {1} )
+        group2 = match.group(2)  # <rt class="XXL_L">〜</rt> の間にある文字列 ( {2} )
+
+        # {1} と {2} が完全に同じか？
+        if group1 == group2:
+            # 一致している場合は、<ruby>〜</ruby> を単に group1 ( {1} ) のみで置き換える
+            return group1
+        else:
+            # 一致していない場合は、置換せずそのまま返す
+            return match.group(0)
+
+    # re.sub() を使うことで、テキスト中に何箇所あっても一括で置換される
+    replaced_text = IDENTICAL_RUBY_PATTERN.sub(replacer, text)
+    return replaced_text
+
+
