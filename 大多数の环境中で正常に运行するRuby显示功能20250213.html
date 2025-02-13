@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大多数の环境中で正常に运行するRuby显示功能</title>
+    <style>
+  
+      :root {
+        --ruby-color: blue;
+        --ruby-font-size: 50%;
+      }
+  
+      .text-S_S { font-size: 12px; }
+      .text-M_M {
+        font-size: 16px; 
+        font-family: Arial, sans-serif;
+        line-height: 2.0 !important;  /* text-M_Mのline-heightとrubyのline-heightは一致させる必要がある。 */
+        display: block; /* ブロック要素として扱う */
+        position: relative;
+      }
+      .text-L_L { font-size: 20px; }
+      .text-X_X { font-size: 24px; }
+  
+      /* ▼ ルビ（フレックスでルビを上に表示） */
+      ruby {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: top !important;
+        line-height: 2.0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+      }
+  
+      /* ▼ 追加マイナス余白（ルビサイズ別に上書き） */
+      rt {
+        display: block !important;
+        font-size: var(--ruby-font-size);
+        color: var(--ruby-color);
+        line-height: 1.05;/*ルビを改行するケースにおけるルビの行間*/
+        text-align: center;
+        /* margin-top: 0.2em !important;   
+        transform: translateY(0.4em) !important; */
+      }
+      rt.XXXS_S {
+        --ruby-font-size: 30%;
+        margin-top: -8.3em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0em) !important;/* ルビの高さ位置はここで調節する。 */
+      }    
+      rt.XXS_S {
+        --ruby-font-size: 30%;
+        margin-top: -7.2em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0em) !important;/* ルビの高さ位置はここで調節する。 */
+      }
+      rt.XS_S {
+        --ruby-font-size: 30%;
+        margin-top: -6.1em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0em) !important;
+      }
+      rt.S_S {
+        --ruby-font-size: 40%;
+        margin-top: -4.85em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0em) !important;
+      }
+      rt.M_M {
+        --ruby-font-size: 50%;
+        margin-top: -4.00em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0.0em) !important;
+      }
+      rt.L_L {
+        --ruby-font-size: 60%; 
+        margin-top: -3.55em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0.0em) !important;
+      }
+      rt.XL_L {
+        --ruby-font-size: 70%;
+        margin-top: -3.20em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0.0em) !important;
+      }
+      rt.XXL_L {
+        --ruby-font-size: 80%;
+        margin-top: -2.80em !important;/*結局ここは0が一番良かった。 */
+        transform: translateY(-0.0em) !important;
+      }
+  
+    </style>
+  </head>
+  <body>
+
+  <!-- ▼ 試験対象の段落に auto-ruby-adjust クラスをつける -->
+  <p class="text-M_M">
+    <br>
+    <ruby>国国<rt class="XXXS_S">国国国<br>国国国<br>国国国</rt></ruby><ruby>国国<rt class="XXS_S">国国<br>国国</rt></ruby><ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="XXL_L">国国</rt></ruby>国国<br>
+    <ruby>国国<rt class="XXXS_S">国国国<br>国国国<br>国国国</rt></ruby><ruby>国国<rt class="XXS_S">国国<br>国国</rt></ruby><ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="XXL_L">国国</rt></ruby>国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国<br>
+    国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国
+    <ruby>国国<rt class="XXS_S">国<br>国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XXL_L">国国</rt></ruby><br>
+    <ruby>国国<rt class="XXS_S">国<br>国</rt></ruby>国国&nbsp;&nbsp;<ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XXL_L">国国</rt></ruby>   <ruby>国国<rt class="XXS_S">国<br>国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="XXL_L">国国</rt></ruby><br>
+    <ruby>国国<rt class="XXS_S">国国<br>国国</rt></ruby>国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国<ruby>国国国国国国国国国国</ruby><ruby>国国国国国国国国国国</ruby><ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><br>
+    <ruby>国国<rt class="XXXS_S">国国国<br>国国国<br>国国国</rt></ruby><br>国国<ruby>国国国国国国<rt class="XS_S">国</rt></ruby>国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国<ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><br>
+    <ruby>国国<rt class="XXXS_S">国国国<br>国国国<br>国国国</rt></ruby>国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国国<ruby>国国<rt class="XS_S">国国</rt></ruby></ruby><ruby>国国<rt class="S_S">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="M_M">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><ruby>国国<rt class="L_L">国国</rt></ruby><ruby>国国<rt class="XL_L">国国</rt></ruby><ruby>国国<rt class="S_S">&nbsp;</rt></ruby><br>
+
+    <ruby>国国<rt class="XXL_L">国国</rt></ruby>
+
+  </p>
+
+</body>
+</html>
