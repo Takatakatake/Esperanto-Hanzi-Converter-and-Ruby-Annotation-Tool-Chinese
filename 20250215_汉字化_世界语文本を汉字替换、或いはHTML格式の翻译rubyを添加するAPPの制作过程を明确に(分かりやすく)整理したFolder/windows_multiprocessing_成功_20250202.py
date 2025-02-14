@@ -32,7 +32,7 @@ from esp_text_replacement_module import (
 
 # --- 2) グローバル設定 (例: プロセス数やテキスト複製回数など) ---
 num_processes = 8
-text_repeat_times = 10
+text_repeat_times = 1
 format_type = 'HTML格式_Ruby文字_大小调整'  # 例: "HTML格式_Ruby文字_大小调整"
 
 # --- 3) JSONファイル および 占位符ファイルのパス ---

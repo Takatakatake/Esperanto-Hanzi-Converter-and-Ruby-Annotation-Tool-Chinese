@@ -308,7 +308,7 @@ def process_segment(lines: List[str],
     replacements_list_for_2char: List[Tuple[str, str, str]] , format_type: str ) -> str:# orchestrate_comprehensive_esperanto_text_replacementの引数をそのまま持って来た。
 
     # 文字列のリストを結合してから置換処理を実行 linesには\nが含まれていない状態の文字列群が格納されている。
-    segment = '\n'.join(lines)
+    segment = ''.join(lines)# 202502変更
     result = orchestrate_comprehensive_esperanto_text_replacement(
     segment, placeholders_for_skipping_replacements, replacements_list_for_localized_string, 
     placeholders_for_localized_replacement, replacements_final_list, replacements_list_for_2char, format_type)# ここでメインの文字列(漢字)置換関数'orchestrate_comprehensive_esperanto_text_replacement'の実行!
@@ -336,7 +336,7 @@ def parallel_process(text: str, num_processes: int ,
             format_type
         )
     
-    lines = text.split('\n')
+    lines = re.findall(r'.*?\n|.+$', text)# 202502変更 '\n'を末尾に残したまま分割。(split('\n')は、'\n'を消してしまう。)
     num_lines = len(lines)
 
     # 行数が 0または1 の場合は単純に処理して返す (エラー回避の安全策)
@@ -368,11 +368,11 @@ def parallel_process(text: str, num_processes: int ,
                 replacements_final_list,replacements_list_for_2char,format_type)  
                 for (start, end) in ranges])
     # 結果を結合
-    return '\n'.join(results)
+    return ''.join(results)# 202502変更
 
 
+## 追加
 
-## ルビHTML形式を出力テキストの前後に追加する関数。
 def apply_ruby_html_header_and_footer(processed_text: str, format_type: str) -> str:
     """
     指定された出力形式に応じて、processed_text に対するHTMLヘッダーとフッターを適用する。
