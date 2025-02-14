@@ -17,8 +17,6 @@ import re
 import json
 from typing import List, Tuple, Dict
 import multiprocessing
-from bs4 import BeautifulSoup, NavigableString
-from bs4.element import Tag
 
 # ================================
 # 1) エスペラント文字変換用の辞書
@@ -58,63 +56,8 @@ def unify_halfwidth_spaces(text: str) -> str:
 # ================================
 # ブラウザで表示した際の文字の高さを揃えるために、HTML形式の都合上、rubyタグがかかっていないメインテキストについても、<ruby>〜</ruby>で囲む必要が生じた。
 # BeautifulSoup4を使用して実装することにした。streamlit cloud でもrequirements.txtに書き込んで、インストールすれば使用できることを確認。
-def wrap_text_with_ruby(html_string: str, chunk_size: int = 10) -> str:
-    soup = BeautifulSoup(html_string, 'lxml')  # 'html.parser' より高速で、streamlitにもインストールできた。
+# HTML形式のブラッシュアップにより必要なくなった。(202502)
 
-    def process_element(element: Tag, in_ruby: bool = False) -> None:
-        # 現在の要素が <ruby> または <rt> なら、その下はすべて「既にruby内」
-        if element.name in ['ruby', 'rt']:
-            in_ruby = True
-
-        for child in list(element.children):
-            if isinstance(child, NavigableString):
-                text = str(child)
-                # 空白や改行のみの場合はスキップ
-                if not text.strip():
-                    continue
-
-                # 親階層が <ruby> か、あるいは現在 <ruby>/<rt> の内側なら処理スキップ
-                if in_ruby:
-                    continue
-
-                # テキストを chunk_size ごとに分割
-                chunks = [text[i : i + chunk_size] for i in range(0, len(text), chunk_size)]
-
-                new_tags = []
-                for chunk in chunks:
-                    chunk = chunk.replace(" ", "&nbsp;").replace("　", "&nbsp;&nbsp;")
-                    ruby_tag = soup.new_tag('ruby')
-                    ruby_tag.string = chunk
-                    new_tags.append(ruby_tag)
-
-                child.replace_with(*new_tags)
-
-            elif child.name and child.name.lower() in ['script', 'style']:
-                # <script> / <style> 内は処理しない
-                continue
-            else:
-                # 子要素を再帰的に処理。in_rubyフラグを引き継ぐ
-                process_element(child, in_ruby)
-
-    # メインの処理を呼び出す
-    process_element(soup, in_ruby=False)
-
-    # <html> と <body> を除去
-    if soup.html:
-        soup.html.unwrap()
-    if soup.body:
-        soup.body.unwrap()
-        # 先頭の <p> タグと末尾の </p> タグを削除
-    if soup.contents[0].name == "p":  # 先頭の <p>
-        first_p = soup.contents[0]
-        first_p.unwrap()
-    if soup.contents[-1].name == "p":  # 末尾の </p>
-        last_p = soup.contents[-1]
-        last_p.unwrap()
-    # 変換後のHTML文字列を取得し、&amp;nbsp;を&amp;nbsp;に置換
-    final_str = str(soup).replace("&amp;nbsp;", "&nbsp;")
-
-    return final_str
 
 # ================================
 # 4) 占位符(placeholder)関連
@@ -292,7 +235,7 @@ def orchestrate_comprehensive_esperanto_text_replacement(
     # 8) 必要に応じてHTML用の整形を実施
     if "HTML" in format_type:
         text = text.replace("\n", "<br>\n")
-        text = wrap_text_with_ruby(text, chunk_size=10)
+        # text = wrap_text_with_ruby(text, chunk_size=10)
         text = re.sub(r"   ", "&nbsp;&nbsp;&nbsp;", text)  # 3つ以上の空白を変換
         text = re.sub(r"  ", "&nbsp;&nbsp;", text)  # 2つ以上の空白を変換
     
@@ -388,87 +331,102 @@ def apply_ruby_html_header_and_footer(processed_text: str, format_type: str) -> 
         # html形式におけるルビサイズの変更形式
         ruby_style_head="""<!DOCTYPE html>
 <html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ほとんどの環境で動作するルビ表示</title>
-  <style>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大多数の环境中で正常に运行するRuby显示功能</title>
+    <style>
 
-    :root {
-      --ruby-color: blue;
-      --ruby-font-size: 50%;
-    }
-
-    .text-S_S { font-size: 12px; }
-    .text-M_M {
-      font-size: 16px; 
-      font-family: Arial, sans-serif;
-      line-height: 1.6 !important; 
-      display: block; /* ブロック要素として扱う */
-      position: relative;
-    }
-    .text-L_L { font-size: 20px; }
-    .text-X_X { font-size: 24px; }
-
-    /* ▼ ルビ（フレックスでルビを上に表示） */
-    ruby {
-      display: inline-flex;
-      flex-direction: column;
-      align-items: center;
-      vertical-align: top !important;
-      line-height: 1.2 !important;
-      margin: 0 !important;
-      padding: 0 !important;
+    html, body {
+      -webkit-text-size-adjust: 100%;
+      -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+      text-size-adjust: 100%;
     }
 
-    /* ▼ 追加マイナス余白（ルビサイズ別に上書き） */
-    rt {
-      display: block !important;
-      font-size: var(--ruby-font-size);
-      color: var(--ruby-color);
-      line-height: 1.05;/*ルビを改行するケースにおけるルビの行間*/
-      text-align: center;
-      /* margin-top: 0.2em !important;   
-      transform: translateY(0.4em) !important; */
-    }
-    rt.XXXS_S {
-      --ruby-font-size: 30%;
-      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
-      transform: translateY(-6.6em) !important;/* ルビの高さ位置はここで調節する。 */
-    }    
-    rt.XXS_S {
-      --ruby-font-size: 30%;
-      margin-top: -0em !important;/*結局ここは0が一番良かった。 */
-      transform: translateY(-5.6em) !important;/* ルビの高さ位置はここで調節する。 */
-    }
-    rt.XS_S {
-      --ruby-font-size: 30%;
-      transform: translateY(-4.6em) !important;
-    }
-    rt.S_S {
-      --ruby-font-size: 40%;
-      transform: translateY(-3.7em) !important;
-    }
-    rt.M_M {
-      --ruby-font-size: 50%;
-      transform: translateY(-3.1em) !important;
-    }
-    rt.L_L {
-      --ruby-font-size: 60%; 
-      transform: translateY(-2.8em) !important;
-    }
-    rt.XL_L {
-      --ruby-font-size: 70%;
-      transform: translateY(-2.5em) !important;
-    }
-    rt.XXL_L {
-      --ruby-font-size: 80%;
-      transform: translateY(-2.3em) !important;
-    }
+  
+      :root {
+        --ruby-color: blue;
+        --ruby-font-size: 0.5em;
+      }
+      html {
+        font-size: 100%; /* 多くのブラウザは16px相当が標準 */
+      }
 
-  </style>
-</head>
-<body>
+      .text-M_M {
+        font-size: 1rem!important; 
+        font-family: Arial, sans-serif;
+        line-height: 2.0 !important;  /* text-M_Mのline-heightとrubyのline-heightは一致させる必要がある。 */
+        display: block; /* ブロック要素として扱う */
+        position: relative;
+      }
+  
+      /* ▼ ルビ（フレックスでルビを上に表示） */
+      ruby {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        vertical-align: top !important;
+        line-height: 2.0 !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        font-size: 1rem !important;
+      }
+  
+      /* ▼ 追加マイナス余白（ルビサイズ別に上書き） */
+      rt {
+        display: block !important;
+        font-size: var(--ruby-font-size);
+        color: var(--ruby-color);
+        line-height: 1.05;/*ルビを改行するケースにおけるルビの行間*/
+        text-align: center;
+        /* margin-top: 0.2em !important;   
+        transform: translateY(0.4em) !important; */
+      }
+      rt.XXXS_S {
+        --ruby-font-size: 0.3em;
+        margin-top: -8.3em !important;/* ルビの高さ位置はここで調節する。 */
+        transform: translateY(-0em) !important;
+      }    
+      rt.XXS_S {
+        --ruby-font-size: 0.3em;
+        margin-top: -7.2em !important;/* ルビの高さ位置はここで調節する。 */
+        transform: translateY(-0em) !important;
+      }
+      rt.XS_S {
+        --ruby-font-size: 0.3em;
+        margin-top: -6.1em !important;
+        transform: translateY(-0em) !important;
+      }
+      rt.S_S {
+        --ruby-font-size: 0.4em;
+        margin-top: -4.85em !important;
+        transform: translateY(-0em) !important;
+      }
+      rt.M_M {
+        --ruby-font-size: 0.5em;
+        margin-top: -4.00em !important;
+        transform: translateY(-0.0em) !important;
+      }
+      rt.L_L {
+        --ruby-font-size: 0.6em; 
+        margin-top: -3.55em !important;
+        transform: translateY(-0.0em) !important;
+      }
+      rt.XL_L {
+        --ruby-font-size: 0.7em;
+        margin-top: -3.20em !important;
+        transform: translateY(-0.0em) !important;
+      }
+      rt.XXL_L {
+        --ruby-font-size: 0.8em;
+        margin-top: -2.80em !important;
+        transform: translateY(-0.0em) !important;
+      }
+  
+    </style>
+  </head>
+  <body>
   <p class="text-M_M">
 """
         ruby_style_tail = "</p></body></html>"
