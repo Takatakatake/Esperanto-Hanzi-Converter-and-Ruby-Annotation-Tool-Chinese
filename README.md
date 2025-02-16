@@ -1,1 +1,1 @@
-# Esperanto-Hanzi-Converter-and-Ruby-Annotation-Tool-Chinese
+# Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool_Chinese_beta
