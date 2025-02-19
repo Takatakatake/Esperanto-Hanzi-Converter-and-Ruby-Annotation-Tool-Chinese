@@ -272,13 +272,13 @@ with st.expander("示例文件列表（点击下载）"):
 
     # 示例 CSV 2
     st.markdown("""
-    **示例 CSV 2：世界语词根 - 汉字 对应表（Mingeo 方案）**  
-    可作为参考，用 Mingeo 先生的汉字化思路。
+    **示例 CSV 2：世界语词根 - 汉字 对应表（知乎 Mingeo 方案）**  
+    可作为参考，用杨先生(Mingeo)的汉字化思路。
     """)
     file_path0 = './Appの运行に使用する各类文件/Mingeo先生版 世界语词根-汉字对应列表.csv'
     with open(file_path0, "rb") as file:
         btn = st.download_button(
-            label="下载示例 CSV 2（Mingeo 先生版本）",
+            label="下载示例 CSV 2（知乎 Mingeo 版本）",
             data=file,
             file_name="世界语词根_汉字对应_Mingeo.csv",
             mime="text/csv"
