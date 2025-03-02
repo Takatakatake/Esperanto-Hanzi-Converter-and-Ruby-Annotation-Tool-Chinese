@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: best,|J: 動物,|C1: 兽,|C2: 动物|,"|E: animalistic, beastly, bestial;animal, beast|"
+|ES: animal,|J: 動物,|C1: 动物,|C2: 动物|,|E: animal;animal (as opposed to vegetable or mineral)|
+|ES: korp,|J: 体,|C1: 身体，体,|C2: 身体|,"|E: bodily, body, corporal, corporeal, of the body, physical;physically;body|"
+|ES: organ,|J: [解]器官,|C1: 器官；机关报,|C2: 器官|,|E: organic;organ|
+|ES: organism,|J: [生]有機体,,|C2: 生物|,|E: organic;organism|
+|ES: ripoz,|J: 休息する,|C1: 休息,|C2: 休息|,"|E: at ease;to repose, rest;repose, rest|"
+|ES: feri,|J: 休日,|C1: 假日,|C2: 假期|,"|E: vacation, holiday;to be on vacation, take a vacation;holiday, vacation|"
+|ES: pensi,|J: 年金,|C1: 退休金，养老金,|C2: 思考|,"|E: to pension;pension, retirement|"
+|ES: emerit,|J: 定年退職者,|C1: 离休者，退休者,|C2: 退休|,"|E: retired;emeritus, ex-official, retired person, retiree, pensioner|"
+|ES: komandit,|J: [商]合資会社,,|C2: 有限合伙|,"|E: ordered, commanded;limited partnership|"
+|ES: kompani,|J: 会社,|C1: 合股，合伙；公司；结伴,|C2: 公司|,|E: company|
+|ES: korporaci,|J: [法]社団法人,,|C2: 致公司|,"|E: corporate;company, corporation, trade union|"
+|ES: sindikat,|J: 労働組合,|C1: 工会，联合工会；辛迪加,|C2: 联盟|,"|E: labor union, trade union, syndicate|"
+|ES: societ,|J: 会,|C1: 会，社，社团，团体,|C2: 社会|,"|E: societal, of society;association, circle, club, society, company|"
+|ES: asoci,|J: 協会,|C1: 协会，联合会，社团,|C2: 联系|,"|E: allied, associated, associative;to associate;association|"
+|ES: rendevu,|J: 会合の約束,|C1: 约会,|C2: 预约|,"|E: to make an appointment, meet, set a date;appointment, date, rendezvous|"
+|ES: kontrakt,|J: (を)契約する,|C1: 订契约，立合同；缔结,|C2: 合同|,"|E: contractual;to enter into a contract with, make a contract;agreement, compact, contract, treaty, deal, pact, covenant, pact|"
+|ES: traktat,|J: [政]条約,|C1: 条约；（长篇）论文，论著,|C2: 条约|,"|E: pact, tract, treatise, treaty, monograph|"
+|ES: konvenci,|J: (国家間の)協定,,|C2: 同意|,"|E: conventional;agreement, convention, general usage|"
+|ES: verk,|J: 著作,|C1: 作品，著作,|C2: 工作|,"|E: to compose, create, write;work (literary or artistic)|"
+|ES: aŭtor,|J: 作者,|C1: 作者，著者,|C2: 作者|,|E: authorial;to author;author|
+|ES: sekretari,|J: 書記,|C1: 秘书，书记,|C2: 秘书|,|E: secretarial;secretary|
+|ES: redakci,|J: 編集部,,|C2: 編輯|,|E: editorial;editorial office|
+|ES: redaktor,|J: 編集者,,|C2: 编辑|,|E: editorial;editor (person)|
+|ES: tez,|J: 命題,,|C2: 论文|,"|E: essay, thesis|"

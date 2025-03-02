@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: mut,|J: 唖の,|C1: 哑，不作声,|C2: 沉默的|,"|E: dumb, mute, speechless, silent|"
+|ES: nud,|J: 裸の,|C1: 裸体，裸露,|C2: 裸|,"|E: bare, naked, nude;barely, nakedly|"
+|ES: barbar,|J: 未開人,,|C2: 野蛮人|,|E: barbaric;barbarically;barbarian|
+|ES: sortiment,|J: [商]見本一式,,|C2: 品种|,"|E: to stock;assortment, selection, collection|"
+|ES: ekzempl,|J: 例,|C1: 模范，榜样；例子,|C2: 例子|,"|E: exemplary;for example;to be an instance of, exemplify, illustrate;copy, example, instance|"
+|ES: specimen,|J: 見本,|C1: 货样，样品；实例；样本,|C2: 样本|,"|E: sample;to sample;sample, specimen|"
+|ES: model,|J: 模型,|C1: 模型，模特，写生用的实物,|C2: 模型|,"|E: model, typical;to model;model, specimen, standard, type, pattern, master|"
+|ES: prototip,|J: 原型,,|C2: 原型|,"|E: prototype;mockup, prototype|"
+|ES: konspir,|J: (政治的)陰謀を企む,,|C2: 阴谋|,"|E: to conspire, plot;conspiracy, plot|"
+|ES: intrig,|J: 陰謀を企てる,,|C2: 阴谋|,"|E: to intrigue, scheme, plot;intrigue, scheme, plot, story (of a novel, play)|"
+|ES: komplot,|J: 陰謀,,|C2: 阴谋|,"|E: to plot, scheme;conspiracy, plot, intrigue, scheme|"
+|ES: program,|J: プログラム,|C1: 程序表，节目单；大纲，提纲；议程；程序,|C2: 程序|,"|E: to program;program, statement of policy, declaration of policy, platform|"
+|ES: plan,|J: 計画,|C1: 平面图；计划,|C2: 计划|,"|E: to organize, plan, schedule;design, diagram, plan, blueprint|"
+|ES: projekt,|J: 企画,|C1: 打算，设想，计划；方案，草案,|C2: 项目|,"|E: to design, make a project of, plan;design document, draft, plan, project, scheme, technical specification|"
+|ES: manifestaci,|J: [政]デモ,,|C2: 证明|,|E: to demonstrate;demonstration|
+|ES: spektakl,|J: 見せ物,|C1: 演出，表演；场面，景象,|C2: 展示|,"|E: showy, spectacular;showily, spectacularly;show, spectacle|"
+|ES: ekspozici,|J: 展覧会,|C1: 展览；展品；展览会场,|C2: 展览|,"|E: to exhibit;exhibition, exposition|"
+|ES: aper,|J: 現れる,|C1: 出现,|C2: 出现|,"|E: to appear, come into sight, emerge, materialize, perform, be published;apparition, appearance, occurrence, instance|"
+|ES: prezent,|J: (を)差し出す,|C1: 摆上；介绍；演出,|C2: 展示|,"|E: introductory;to present, offer, tender, give, perform, show, tender, represent;presentation, representation|"
+|ES: afekt,|J: (と)見せかける,,|C2: 影响|,"|E: affected, artificial, assumed, prim;primly, showily, artificially;to be affected, pose, put on airs, feign, pretend;affectation|"
+|ES: gest,|J: 身振りをする,|C1: 做手势，用姿势示意,|C2: 手势|,"|E: to gesticulate, gesture;gesture|"
+|ES: poz,|J: [美]ポーズをとる,,|C2: 姿势|,"|E: to pose;pose, posture|"
+|ES: kondut,|J: ふるまう,|C1: 行为表现，待人接物,|C2: 行为|,"|E: behavioral;to behave, act, conduct (oneself);behavior, conduct, deportment, manners|"
+|ES: sin/ten##,|J: 態度,|C1: 举止，姿态，仪表，态度,|C2: 他/她自己##|,
+|ES: impres,|J: 印象,|C1: 印象；感光,|C2: 留下深刻印象|,"|E: impressive;impressively;to impress, make an impression on;impression|"

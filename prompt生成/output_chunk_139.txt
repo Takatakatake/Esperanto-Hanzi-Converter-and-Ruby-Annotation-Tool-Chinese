@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: ring,|J: 輪,|C1: 环，圈；戒指,|C2: 戒指|,|E: annular;ring|
+|ES: turb,|J: [遊]こま,,|C2: 涡轮|,|E: spinning top|
+|ES: ŝiling,|J: [貨]シリング,,|C2: 先令|,|E: shilling|
+|ES: dekliv,|J: 坂,|C1: 斜面，坡,|C2: 坡|,"|E: sloping;to slope (down);hill, hillside, side, slant, slope, incline, backslash|"
+|ES: krut,|J: 切り立った,|C1: 险峻，陡峭,|C2: 陡|,"|E: abrupt, steep, sheer;steeply|"
+|ES: oblikv,|J: 斜めの,|C1: 斜，倾斜，歪斜,|C2: 斜|,"|E: oblique, slanting;diagonal, forward slash, fraction bar, skew|"
+|ES: kontur,|J: 輪郭,,|C2: 轮廓|,"|E: to delineate, draw;contour, outline|"
+|ES: kurb,|J: 曲線,|C1: 曲线,|C2: 曲线|,"|E: bandy, bent, curved, bow(ed), winding;bend, curve|"
+|ES: ark,|J: 弓形,|C1: 弧，弧形物，拱形物,|C2: 拱|,"|E: arched;to arch;arc, bow, arch, buttress|"
+|ES: konkav,|J: [理]凹の,,|C2: 凹|,|E: concave|
+|ES: fald##,|J: 折り目,|C1: 折叠,|C2: 折叠＃＃|,
+|ES: pec,|J: 一片,|C1: 片，块；件,|C2: 片|,"|E: bit, lump, piece, shred, chunk (torrent)|"
+|ES: blok,|J: 塊,|C1: 块，大块；砧板；拍纸簿,|C2: 堵塞|,"|E: all in one piece;to block, blockade;block, boulder, chunk, unit|"
+|ES: split,"|J: (木,石,鉄などの)薄片",|C1: 裂片，碎片,|C2: 分裂|,"|E: to splinter, split;splinter, wafer|"
+|ES: fragment,|J: 断片,,|C2: 分段|,"|E: fragmentary;to fragment;bit, fragment, lump, piece, scrap, shred, splinter|"
+|ES: stump,|J: 切株,|C1: 残肢，残余物，存根,|C2: 树桩|,"|E: squat;butt, stub, stump|"
+|ES: trunk,|J: [植]幹,|C1: （树）干，躯干,|C2: 树干|,"|E: to cut off, truncate;frustum, stem, trunk, torso|"
+|ES: branĉ,|J: 枝,|C1: 枝，分支,|C2: 分支|,"|E: to branch;bough, branch|"
+|ES: verg,|J: 細枝,|C1: 枝条，小树枝；细长小棒,|C2: 杆|,"|E: to beat, cane, flog, take a switch to;cane, rod, switch, wand, stick, staff|"
+|ES: foli,|J: 葉,|C1: 叶，张（两面）,|C2: 叶子|,"|E: to browse, leaf through, page through;leaf, sheet, page|"
+|ES: lob,|J: [解]葉(よう),,|C2: 叶|,|E: lobe|
+|ES: riĉ,|J: 金持ちの,|C1: 富裕，丰富,|C2: 富有的|,"|E: affluent, rich, wealthy, well-off, well-to-do;richly;richness, rich thing|"
+|ES: abund,|J: 有り余るほどの,|C1: 大量，极其丰富,|C2: 丰富|,"|E: abundant, affluent, ample, copious, plentiful, profuse, rich, bountiful;abundantly;to abound;abundance, plenty, bounty|"
+|ES: sat,|J: 満腹した,|C1: 饱，满足,|C2: 萨特|,"|E: full, replete, satisfied;the faithful wife of Shiva;to be full, have enough, sate;glut, satiety;Sennacieca Asocio Tutmonda|"
+|ES: kontent,|J: 満足な,|C1: 满意，满足,|C2: 内容|,"|E: content, contented, gratified, happy, pleased, satisfied, happy;to be content;contentment, satisfaction|"

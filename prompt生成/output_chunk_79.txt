@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: pardon,|J: (を)ゆるす,|C1: 饶恕，原谅,|C2: 对不起|,"|E: to forgive, pardon, reprieve, excuse, overlook;absolution, pardon, forgiveness|"
+|ES: indulg,|J: (を)容赦する,|C1: 宽恕，纵容；不得罪，体谅,|C2: 放纵|,"|E: lenient;to be lenient with, indulge, spare;clemency, forbearance, indulgence, indulgency|"
+|ES: kondolenc,|J: 哀悼,,|C2: 哀悼|,"|E: sympathetic;sympathetically;to commiserate, condole, express condolences;condolence(s)|"
+|ES: bedaŭr,|J: (を)残念に思う,|C1: 痛惜，惋惜,|C2: 对不起|,"|E: regretfully, regrettably;to be sorry about, regret, lament, pity;regret, remorse, sorrow|"
+|ES: pent,|J: (を)後悔する,|C1: 悔过，悔悟，忏悔,|C2: 笔|,"|E: contrite, penitent;to repent;penance, penitence, repentance, regret, remorse|"
+|ES: domaĝ,|J: 惜しむ,|C1: 吝惜，爱惜,|C2: 遗憾|,"|E: regrettable;regrettably;That’s too bad, What a pity;to be anxious about, be concerned for, begrudge, not want to spend, regret, be sorry about, fear for;pity, something regrettable|"
+|ES: funebr,|J: 喪,|C1: 哀悼；丧，服丧,|C2: 葬礼|,"|E: dismal, doleful, funereal, mournful, sinister, gloomy;to bewail, mourn, grieve, weep;grief, mourning (band, garments)|"
+|ES: sufer,|J: 苦しむ,|C1: 忍受痛苦，痛苦；受，挨，患,|C2: 遭受|,"|E: to abide, bear, endure, put up with, suffer, undergo;martyrdom, suffering|"
+|ES: toler,|J: (を)我慢する,|C1: 忍受，容忍，宽容；经得起,|C2: 容忍|,"|E: to endure, put up with, tolerate, suffer, bear, stand;forbearance|"
+|ES: plend,|J: 不満を訴える,|C1: 诉苦，抱怨，告状,|C2: 抱怨|,"|E: complain, plaintive;lamentingly, complainingly;to complain, lament;complaint|"
+|ES: lament,|J: 悲嘆にくれる,,|C2: 哀叹|,"|E: to grieve, mourn, lament, wail;lament, wail|"
+|ES: kares,|J: (を)愛撫する,|C1: 爱抚，抚摩,|C2: 抚摸|,"|E: wheedling;caressingly, tenderly;to caress, fondle, stroke;caress, stroke, endearment|"
+|ES: dorlot,|J: (を)甘やかす,|C1: 宠爱，溺爱,|C2: 宠爱|,"|E: to coddle, pamper, pet, fondle|"
+|ES: kis,|J: (に)キスする,|C1: 吻,|C2: 吻|,|E: to kiss;kiss|
+|ES: brak/um##,|J: (を)抱きしめる,|C1: 拥抱，抱,|C2: 手臂/嗯##|,
+|ES: riverenc,|J: お辞儀する,|C1: 鞠躬，行屈膝礼,|C2: 弓|,"|E: to bow, curtsy, make reverence to;bow, curtsy, obeisance, homage, reverence|"
+|ES: salut,|J: (に)挨拶する,|C1: 致敬,|C2: 你好|,"|E: to greet, salute, bow, log in, log on, sign on;bow, greeting, salutation, salute, login|"
+|ES: kompliment,|J: お世辞,,|C2: 赞扬|,|E: to compliment;compliment|
+|ES: aplaŭd,|J: (に)拍手する,|C1: 鼓掌，拍手称赞；赞同,|C2: 掌声|,"|E: to acclaim, applaud, clap;acclaim, acclamation, approval|"
+|ES: aklam,|J: (に)歓呼する,,|C2: 欢呼|,"|E: by acclamation;to acclaim, applaud, hail;acclaim, acclamation, approval|"
+|ES: ador,|J: (を)崇拝する,|C1: 崇拜，崇敬；酷好，醉心于…,|C2: 崇拜|,"|E: adoring;to adore, worship, idolize;adoration, worship|"
+|ES: laŭd,|J: (を)ほめる,|C1: 称赞，赞扬,|C2: 称赞|,"|E: praiseful;glowingly;to acclaim, commend, laud, praise;commendation, praise|"
+|ES: admir,|J: (に)感嘆する,|C1: 赞赏，倾倒，崇敬,|C2: 钦佩|,|E: admiring;admiringly;to admire;admiration|
+|ES: frand,|J: (を)美食する,|C1: 享用美味,|C2: 甜的|,"|E: alluring, attractive, enticing, tempting, appetizing, delicious, tasty;to eat for pleasure, relish, enjoy|"
+|ES: gust/um##,|J: (を)味わう,|C1: 品味，品尝；领略，欣赏，享受,|C2: 味道/嗯##|,

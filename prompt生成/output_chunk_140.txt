@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: sufiĉ,|J: 十分な,|C1: 足够，充分,|C2: 足够的|,"|E: adequate, ample, enough, sufficient;enough, quite, rather, sufficiently;to suffice, be enough;enough (of something)|"
+|ES: perfekt,|J: 完全な,|C1: 完美，完善；地道的；完成体,|C2: 完美的|,|E: perfect;perfectly;perfect|
+|ES: plen,|J: いっぱいの,|C1: 满，完全,|C2: 满的|,"|E: complete, full, integral, plenary, thorough, whole;completely, fully;to fill|"
+|ES: komplet,|J: 完全な,|C1: 全，齐全，完备,|C2: 完全的|,"|E: absolute, complete;completely, entirely, through;outfit, set, suit, kit|"
+|ES: ŝarg,|J: (に)装填する,,|C2: 收费|,"|E: loading;to charge, load, burden;charge|"
+|ES: ŝarĝ,|J: 積荷,|C1: 重荷；载运的货物；负荷,|C2: 负担|,"|E: burdensome;loaded (with);to burden, load, charge;burden, charge, load, capacity|"
+|ES: plus,|J: [数]プラス,|C1: 加，正,|C2: 加|,"|E: plus;asset, plus sign, surplus;plus|"
+|ES: suplement,|J: 補足,|C1: 增补；补篇，补遗；补角,|C2: 此外|,"|E: supplementary;to complete, supplement;adjunct, supplement|"
+|ES: komplement,|J: [文]補語,|C1: 补语；补足（物），补充（物）,|C2: 补充|,"|E: complementary, complemented;to complement;complement, adjunct|"
+|ES: rikolt,|J: (を)収穫する,|C1: 收割，收获；采集,|C2: 收成|,"|E: to gather, harvest, reap;crop, harvest|"
+|ES: kolekt,|J: 収集品,|C1: 收集,|C2: 收藏|,"|E: to collect, gather, pick up, congregate, rally, assemble, aggregate;collection, gathering|"
+|ES: abstrakt,|J: 抽象的な,,|C2: 抽象的|,|E: abstract;abstractly;to abstract;abstract|
+|ES: resum,|J: 要約,|C1: 摘要，梗概，提要，总结,|C2: 概括|,"|E: summary, outline;in brief, in summary;to abstract, summarize, sum up, recapitulate, recap;abridgement, abstract, résumé, summary, epitome, synopsis|"
+|ES: afiks,|J: [文]接辞,,|C2: 词缀|,"|E: affixal;to attach, put up;affix|"
+|ES: apozici,|J: [文]同格,,|C2: 并列|,"|E: to appose, juxtapose;apposition|"
+|ES: konjugaci,|J: [文]動詞活用,,|C2: 共轭|,|E: to conjugate;conjugation|
+|ES: konjunkci,|J: [文]接続詞,,|C2: 结合|,|E: to be in conjunction;conjunction|
+|ES: asimil,|J: (を)同化する,,|C2: 吸收|,"|E: to assimilate, localize;assimilation|"
+|ES: aneks,|J: (を)併合する,,|C2: 附件|,"|E: accessory;to annex;annexation, annex|"
+|ES: feder,|J: (を)連合させる,,|C2: 费德|,"|E: federal, federative;to federate;federation|"
+|ES: sintez,|J: [化]合成,,|C2: 合成|,|E: synthetic;to synthesize;synthesis|
+|ES: miks,|J: (を)混ぜる,|C1: 使混合；配置，调制,|C2: 混合|,"|E: promiscuous;to blend, mingle, mix, shuffle, scramble;mix|"
+|ES: kombin,|J: (を)組合わせる,|C1: 组合，结合，配合；化合；草拟，拟订,|C2: 组合|,"|E: to combine;combination, compound|"
+|ES: sum,|J: 合計,|C1: 和数，总合；钱数；概要,|C2: 和|,"|E: aggregate;altogether;to sum;amount, sum|"
+|ES: op,|J: [接尾辞]集合数,|C1: 构成集合数,|C2: 操作|,"|E: collective, joint;(denotes a numeral collective);at a time, collectively, together;tuple|"

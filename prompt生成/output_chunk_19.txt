@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: proverb,|J: 諺,|C1: 谚语,|C2: 谚语|,"|E: proverbial;adage, proverb, maxim, saying|"
+|ES: sentenc,|J: 格言,,|C2: 句子|,"|E: maxim, proverb, wise saying|"
+|ES: parafraz,|J: [文]パラフレーズ,,|C2: 释义|,|E: to paraphrase;paraphrase|
+|ES: trop,|J: [修]比喩,,|C2: 比喻|,"|E: figure of speech, trope|"
+|ES: metafor,|J: 隠喩,,|C2: 隐喻|,|E: figurative;figuratively;metaphor|
+|ES: indikativ,|J: [文]直説法,,|C2: 指示性的|,"|E: indicative, indicative mood|"
+|ES: demonstrativ,|J: [文]指示詞,,|C2: 示范性的|,"|E: demonstrative;demonstrative, demonstrative pronoun|"
+|ES: vokal,|J: [文]母音,,|C2: 元音|,|E: vowel;vowel|
+|ES: konsonant,|J: [文]子音,,|C2: 辅音|,|E: consonant|
+|ES: asonanc,|J: [詩]母音押韻,,|C2: 谐音|,"|E: assonant;to make assonant;alliteration, assonance|"
+|ES: rim,|J: [詩]韻,|C1: 韵，韵脚,|C2: 轮缘|,|E: to rhyme;rhyme|
+|ES: silab,|J: [文]音節,,|C2: 音节|,|E: syllabic;to spell;syllable|
+|ES: bombast,|J: 大言壮語,,|C2: 夸夸其谈|,"|E: showy, bombastic;bombast|"
+|ES: satir,"|J: 諷刺(詩,文)",|C1: 讽刺诗，讽刺作品,|C2: 讽刺|,"|E: satirical;satirically;to satirize;lampoon, satire|"
+|ES: paskvil,|J: 風刺文,,|C2: 复活节彩蛋|,"|E: satirical, spoof;satirically;to lampoon, satirize, spoof;lampoon, satire|"
+|ES: fiktiv,|J: fikcia,,|C2: 虚构|,|E: fictitious;fictitiously|
+|ES: apokrif,|J: 偽作の,,|C2: 伪经|,|E: apocryphal;apocryphally;apocrypha|
+|ES: sofism,|J: 詭弁,,|C2: 诡辩|,"|E: fallacy, sophism|"
+|ES: skeptik,|J: 懐疑的な,,|C2: 怀疑论者|,|E: skeptical;skeptically;skepticism|
+|ES: spekulativ,|J: [哲]思弁的な,,|C2: 投机|,|E: speculative;to speculate;speculation|
+|ES: metempsikoz,|J: [宗]輪廻,,|C2: 轮回|,"|E: metempsychosis, transmigration of souls|"
+|ES: transitiv,|J: [文]他動の,,|C2: 及物动词|,|E: transitive|
+|ES: transept,|J: [建]トランセプト,,|C2: 横厅|,|E: transept|
+|ES: marĝen,|J: [印]余白,,|C2: 边缘|,|E: marginal;margin|
+|ES: elips,|J: [文]省略,,|C2: 椭圆|,|E: ellipse|

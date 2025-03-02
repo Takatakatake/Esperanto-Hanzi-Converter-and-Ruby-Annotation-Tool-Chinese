@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: parol,|J: 話しをする,|C1: 说话，演讲，交谈,|C2: 说话|,"|E: oral, spoken, verbal;in speech, orally, verbally;to speak, talk;speech, word (spoken)|"
+|ES: konversaci,|J: 会話する,|C1: 会话，谈话，交谈,|C2: 交谈|,"|E: to chat, converse, talk;chat, talk, conversation|"
+|ES: polemik,|J: (誌上の)論争,,|C2: 有争议的|,"|E: polemical, controversial;to engage in a controversy;controversy, polemic, dispute|"
+|ES: disput,|J: 口論する,|C1: 争论，争辩,|C2: 争议|,"|E: disputatious;to argue, dispute, bicker, contest, wrangle, contend;contest, debate, dispute, quarrel, polemic, strife|"
+|ES: kverel,|J: 口論する,,|C2: 争吵|,"|E: to quarrel, wrangle;quarrel|"
+|ES: diskut,|J: (を)討議する,|C1: 讨论,|C2: 讨论|,|E: to discuss;discussion|
+|ES: debat,|J: 討議,,|C2: 辩论|,"|E: to beat off, knock off, strike off, debate;debate|"
+|ES: boks,|J: 拳闘する,,|C2: 拳击|,"|E: to box;boxing, pugilism|"
+|ES: duel,|J: 決闘,,|C2: 决斗|,|E: to duel;duel|
+|ES: milit,|J: 戦争する,|C1: 作战,|C2: 战争|,"|E: militant, military;to make war, wage war;war|"
+|ES: batal,|J: 戦う,|C1: 战斗，斗争,|C2: 战斗|,"|E: battle, of a battle;in battle;to (do) battle, combat, contend, fight, struggle, engage in combat;action, battle, scuffle, struggle, combat, fray, fight; sweet potato, yam|"
+|ES: lukt,|J: 格闘する,|C1: 搏斗，角斗；奋斗,|C2: 斗争|,"|E: to struggle, wrestle;struggle, tussle|"
+|ES: spur,|J: 足跡,|C1: 足迹；痕迹，遗迹，迹象,|C2: 痕迹|,"|E: to trace, trail, track;trace, track, trail|"
+|ES: labirint,|J: 迷路,,|C2: 迷宫|,"|E: labyrinth, labyrinth, maze|"
+|ES: spron,|J: 拍車,,|C2: 支线|,"|E: to encourage, incite, rouse, spur, stimulate, stir up;spur, sprat|"
+|ES: pel,|J: (を)追いたてる,|C1: 赶，驱,|C2: 为了|,"|E: to chase, drive, drive on, impel, shoo, expel, dispel, propel|"
+|ES: tir,|J: (を)引く,|C1: 拖，拉，拽,|C2: 拉|,"|E: to drag, draw, haul, pull, tug, tow;pull, tug, twitch|"
+|ES: tren,|J: 引きずって行く,|C1: 拖，拉，拽，牵引,|C2: 拖|,"|E: to drag, tow, trail, train|"
+|ES: ramp,|J: 這って進む,|C1: 爬，蠕动，爬行，匍匐而行,|C2: 坡道|,"|E: to crawl, creep, sneak;crawl|"
+|ES: vag,|J: さまよう,|C1: 流浪，游荡，漂泊，徘徊，彷徨,|C2: 阴道|,"|E: circuitous;to drift, loiter, prowl, ramble, roam, wander, meander, stray|"
+|ES: salt,|J: 跳躍する,|C1: 跳,|C2: 跳|,"|E: to jump, leap, spring, bounce, bound, vault;bound, jump, leap, spring, GOTO statement|"
+|ES: glit,|J: すべる,|C1: 滑；溜冰,|C2: 滑动|,"|E: floating, slick, slippery;to glide, slide, slip, skate;slide, slip|"
+|ES: plonĝ,|J: (に)飛び込む,|C1: [体育]跳水；俯冲,|C2: 潜水|,"|E: to dive, plunge;plunge, plunging|"
+|ES: ŝveb,|J: (空中に)浮かぶ,,|C2: 徘徊|,"|E: hover;to circle, hang, hover, float;waft|"
+|ES: rem,|J: (舟を)漕ぐ,|C1: 划桨，划船，摇橹,|C2: 排|,|E: to row|

@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: inform,|J: (を)通報する,|C1: 通知，告诉，报告,|C2: 信息|,"|E: informative;to acquaint, inform, report, make known;account, information|"
+|ES: raport,|J: (を)報告する,|C1: 转告；汇报；宣布；陈述，报告；报道,|C2: 报告|,"|E: report;to give an account, report;account, record, report, statement|"
+|ES: bulten,|J: 会報,|C1: （定期的）会报，公报，通报,|C2: 公告|,"|E: bulletin, newsletter|"
+|ES: depeŝ,|J: 急報,,|C2: 派遣|,"|E: to dispatch;dispatch, message|"
+|ES: peĉ,|J: [化]ピッチ,,|C2: 沥青|,|E: to pitch;pitch|
+|ES: punkt,|J: 点,|C1: 点,|C2: 观点|,"|E: to punctuate;dot, period, point, spot|"
+|ES: poent,|J: 得点,,|C2: 观点|,"|E: to score;point (cards, score)|"
+|ES: not,|J: 覚え書,|C1: 笔记，摘记；注释；评语,|C2: 笔记|,"|E: to annotate, note, make a note, write down;annotation, note, grade, memorandum, bulletin, mark|"
+|ES: komentari,|J: koment,,|C2: 评论|,"|E: to comment on;annotation, note, commentary|"
+|ES: koment,|J: (を)注釈する,,|C2: 评论|,"|E: comment;to comment, annotate;annotation, comment, note, remark|"
+|ES: fokus,|J: [理]焦点,,|C2: 重点|,|E: focal;to focus;focus|
+|ES: akcent,|J: [文]アクセント,|C1: 重音，声调，语气，腔调,|C2: 口音|,"|E: accented, emphasized, stressed;to accentuate, emphasize, accent, stress;accent, stress, emphasis|"
+|ES: emfaz,|J: 強調,,|C2: 强调|,"|E: emphatic;emphatically;to accent, accentuate, emphasize, highlight;accent, emphasis|"
+|ES: ŝajn,|J: (~と)見える,|C1: 好象；看样子,|C2: 似乎|,"|E: apparent, seeming, illusive, illusory, sham, suspect;apparently, seemingly;to appear (to be), look, seem;appearance, illusion, look, semblance|"
+|ES: aspekt,|J: (に)見える,|C1: 像是，貌似，显得,|C2: 外貌|,"|E: in appearance;to appear, look, seem;appearance, aspect, look, sight, view, preview|"
+|ES: vid,"|J: (を)見る,(に)会う",|C1: 看见,|C2: 看法|,"|E: visual;visually;to see, view, observe;sight, view, vision|"
+|ES: rigard,|J: (を)見る,|C1: 看；看待,|C2: 看|,"|E: to consider, deem, look, look at, regard, see, view, watch;look|"
+|ES: aŭdienc,|J: 引見,,|C2: 观众|,|E: audience (official reception)|
+|ES: referenc,|J: 参照,,|C2: 参考|,"|E: reference;to reference;recommendation, reference, testimonial, referral, pointer (variable)|"
+|ES: indeks,|J: 索引,,|C2: 指数|,|E: indexed;to index;index|
+|ES: sugesti,|J: 暗示,,|C2: 建议|,|E: to suggest;the power of suggestion|
+|ES: revelaci,|J: [宗]啓示,,|C2: 揭示|,|E: to reveal;revelation|
+|ES: montr,|J: (を)示す,|C1: 出示，指出，表明,|C2: 展示|,"|E: demonstrative;to indicate, point out, show, denote, expose, view;sign, view|"
+|ES: indik,|J: (を)指し示す,|C1: 指出，指示，表示,|C2: 表明|,"|E: indicative;to indicate, suggest, designate, point;flag, indication, denotation, designation|"
+|ES: alud,|J: (を)ほのめかす,|C1: 暗指；暗示，（间接）提到,|C2: 典故|,"|E: indirect, allusive;indirectly;to allude, hint, refer to;allusion|"

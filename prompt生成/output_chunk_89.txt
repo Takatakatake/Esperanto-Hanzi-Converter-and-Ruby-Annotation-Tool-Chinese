@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: korekt,|J: (を)訂正する,|C1: 改正，校正；制止，纠正,|C2: 正确的|,"|E: correct, right, corrective;correctly;to correct, revise;correction|"
+|ES: bind,|J: (を)製本する,|C1: 装订，精装,|C2: 绑定|,"|E: to bind, link (a program);binding, cover|"
+|ES: redakt,|J: (を)編集する,|C1: 草拟，拟订，编写，撰写；编辑，校订,|C2: 编辑|,"|E: edit, editing;to compile, edit;composition, redaction, edit|"
+|ES: kompon,|J: (を)構成する,|C1: 组成，构成；创作；作曲,|C2: 作品|,"|E: to combine, compose, conjoin;composition, superposition|"
+|ES: kompil,|J: (を)編さんする,,|C2: 编译|,|E: to compile;compilation|
+|ES: modul,|J: [楽](を)転調する,,|C2: 模块|,"|E: modular;modulo;to modulate;engine, module, modulo, snap-in|"
+|ES: konfuz,|J: (を)混乱させる,|C1: 使混乱，搅乱；混淆,|C2: 令人困惑|,"|E: confused, jumbled (up);confusedly;to bewilder, confuse, puzzle, disconcert, perplex, trouble, perturb, unsettle, disturb;commotion, confusion, muddle|"
+|ES: komplik,|J: (を)複雑にする,|C1: 使复杂，使麻烦,|C2: 复杂的|,"|E: complex, complicated, intricate, involved;intricately;to complicate;complexity|"
+|ES: fund,|J: 底,|C1: 底，深处，底部,|C2: 底部|,"|E: thorough, painstaking;from A to Z, thoroughly;bottom, foundation, ground|"
+|ES: profund,|J: 深い,|C1: 深，深刻，深远，深沉,|C2: 深的|,"|E: deep, profound;deeply, profoundly;depth|"
+|ES: abism,|J: 深淵,,|C2: 深渊|,"|E: abysmal;abysmally;abyss, chasm, gulf, precipice, oblivion|"
+|ES: sond,|J: (機具で深い所を)探る,,|C2: 探测|,"|E: to fathom, sound, try depth, probe, plumb, sound out;scan, probe|"
+|ES: sulk,|J: [農]うね,|C1: 犁沟，垄沟；深而不规则的沟、缝等,|C2: 畦|,"|E: rugged;to furrow, wrinkle;groove, ridge, wrinkle (facial), furrow (in the earth)|"
+|ES: kavern,|J: ほら穴,|C1: 地下深洞，大山洞；腔，洞,|C2: 洞穴|,"|E: cavernous, hollow;cave, cavern, den|"
+|ES: tru,|J: 穴,|C1: 洞，孔，穴,|C2: 洞|,"|E: having holes;to perforate, punch, puncture, make a hole in;hole, orifice|"
+|ES: kav,|J: 穴,|C1: 坑，腔，膛,|C2: 空洞的|,"|E: concave, hollow;to dig out, excavate;cave, cavity, groove|"
+|ES: bor,|J: (に)穴をあける,|C1: 钻孔，打洞（钻透）；穿过,|C2: 钻孔|,"|E: to bore, drill;boron|"
+|ES: fos,|J: (を)掘る,|C1: 掘土，翻地；挖掘,|C2: 福斯|,"|E: to dig, grub, spade, excavate;ditch|"
+|ES: fos##,|J: (地面の)穴,|C1: 掘土，翻地；挖掘,|C2: 自由与自由|,
+|ES: akn,|J: 吹出物,|C1: 丘疹、疱疹、痤疮、粉刺的总称,|C2: 粉刺|,"|E: affected by acne;pimple, zit, blemish, spot, acne|"
+|ES: ŝaŭm,|J: 泡,|C1: 泡沫，白沫，涎沫，（马、牛的）汗,|C2: 泡沫|,"|E: effervescent, sparkling;to foam, froth;foam, froth, scum, spume|"
+|ES: rekrement,|J: 絞りかす,,|C2: 再生长|,"|E: dregs, grounds, husks, refuse, residue, waste|"
+|ES: ŝpruc,|J: 噴出する,|C1: 喷射，喷洒，迸出；突然出现，涌现,|C2: 溅|,"|E: to gush, spurt, spurt out, splash, spout, pop-out;gush, spray, spurt|"
+|ES: ŝut,|J: (粉粒を)まく,|C1: 倾，倒出，撒,|C2: 关闭|,"|E: to dump, pour (out), scatter, tip|"
+|ES: ĵet,|J: (を)投げる,|C1: 扔，抛，喷,|C2: 扔|,"|E: to cast, fling, throw, toss, pitch;throw, toss, pitch|"

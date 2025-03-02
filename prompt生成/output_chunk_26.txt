@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: komedi,|J: 喜劇,|C1: 喜剧,|C2: 喜剧|,|E: comedic;comedy|
+|ES: histori,|J: 歴史,|C1: 历史；故事,|C2: 历史|,"|E: historical;historically;annals, history, story|"
+|ES: biografi,|J: 伝記,,|C2: 传|,|E: biographic;biographically;biography|
+|ES: alegori,|J: たとえ話,,|C2: 寓言|,|E: allegoric;allegorically;allegory|
+|ES: anekdot,|J: 逸話,|C1: 轶事，趣闻，小故事,|C2: 轶事|,|E: anecdotal;anecdote|
+|ES: fabl,|J: 寓話,,|C2: 寓言|,|E: fabulous;fable|
+|ES: fabel,|J: 童話,|C1: 童话,|C2: 童话|,"|E: fabulous;fabulously;tell fables, recount;bedtime story, fairy tale, story, tale|"
+|ES: legend,|J: 伝説,,|C2: 传奇|,"|E: legendary;legend, myth|"
+|ES: mit,|J: 神話,,|C2: 神话|,|E: mythical;myth|
+|ES: sort,|J: 運命,|C1: 命运，天数,|C2: 命运|,"|E: destiny, fate, fortune, luck, lot|"
+|ES: fatal,|J: 宿命,,|C2: 致命的|,"|E: fated, fateful, ill-fated, inevitable, ruinous;fatally;fatality, fate, ill fate|"
+|ES: event,|J: 事件,|C1: 事变,|C2: 事件|,|E: event|
+|ES: epizod,|J: エピソード,,|C2: 插曲|,"|E: episodal, incidental;episode, occurrence, event|"
+|ES: eventual,|J: 起こり得る,,|C2: 可能|,"|E: contingent, eventual;if the occasion arises;contingency, eventuality|"
+|ES: okaz,|J: 起こる,|C1: 发生,|C2: 场合|,"|E: accidental, casual, occasional, chance;by chance, on occasion, casually, in that case, occasionally, sometimes;to come about, happen, occur, befall, chance, happen, take place, transpire, arrange, bring about;accident, chance, event, occurrence, opportunity, occasion|"
+|ES: akcident,|J: 事故,|C1: 事故，偶发事件,|C2: 偶然|,"|E: accidental;accidentally;to have an accident;accident, mishap|"
+|ES: ŝanc,|J: 機会,|C1: 机会，时机,|C2: 机会|,"|E: lucky;by accident;chance, luck, prospect|"
+|ES: hazard,|J: 偶然,|C1: 机遇，巧合；偶然，侥幸,|C2: 偶然|,"|E: accidental, adventitious, chance, random, rash, hazardous;by accident, by chance, at random;to hazard, venture, risk, gamble;accidence, chance, hazard|"
+|ES: atavism,|J: 隔世遺伝,,|C2: 返祖现象|,"|E: atavistic;atavism, throw-back|"
+|ES: genealogi,|J: 系図学,,|C2: 家谱|,"|E: genealogical;genealogically;family tree, genealogy, pedigree, genealogy|"
+|ES: etnografi,|J: 民族誌学,,|C2: 民族志学者|,|E: ethnography|
+|ES: ras,|J: 人種,,|C2: 种族|,"|E: racial;breed, race|"
+|ES: gent,|J: 民族,|C1: 种族，氏族，部族,|C2: 人们|,"|E: clan, ethnic group, genus, tribe, family, kin, race, people;Ghent|"
+|ES: etn,|J: 民族(人種),,|C2: 民族|,"|E: ethnic;ethnos, ethnic group;Etna|"
+|ES: human,|J: 人間的な,|C1: 人道，仁爱，仁慈,|C2: 人类|,"|E: humane, humanitarian;humanely|"

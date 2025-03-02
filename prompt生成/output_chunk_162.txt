@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: ranc,|J: 酸敗した,,|C2: 馊|,|E: rancid|
+|ES: fort,|J: 強い,|C1: 强有力；坚强,|C2: 强的|,"|E: strong, pronounced;strongly, earnestly;to outrage;force, strength, vigor, power|"
+|ES: intens,|J: 強烈な,,|C2: 激烈的|,"|E: acute, intense, intensive;intensely|"
+|ES: firm,|J: 堅固な,|C1: 坚实，牢固；坚决,|C2: 公司|,"|E: fast, firm, stable, staunch, unshaken;firmly;company, firm, enterprise, business|"
+|ES: fortik,|J: 頑丈な,|C1: 坚实，牢固，强健,|C2: 堡|,"|E: able-bodied, durable, firm, robust, sturdy, strong, solid, stable, substantial, rugged, fortified, durable;solidly|"
+|ES: rigid,|J: 硬直した,|C1: 硬直的，挺的，僵硬的；执拗的，倔强的,|C2: 僵硬的|,"|E: inflexible, rigid, stiff;rigidly, stiffly|"
+|ES: obstin,|J: 頑固な,|C1: 固执，执拗；顽强，顽固,|C2: 固执|,"|E: dogged, headstrong, obstinate, stubborn;obstinently;to be obstinate, be stubborn, persist;obstinacy, stubbornness|"
+|ES: pez,|J: 重い,|C1: 重,|C2: 重量|,"|E: burdensome, heavy, onerous, weighty;heavily, with weight;to be heavy, weigh;significance, weight|"
+|ES: masiv,|J: どっしり重い,,|C2: 大量的|,"|E: large, massive, heavy|"
+|ES: dik,|J: 太い,|C1: 厚，粗，胖,|C2: 厚的|,"|E: thick, corpulent, fat, stout, plump, bold (font);thickly;thickness|"
+|ES: dens,|J: 濃い,|C1: 密集，茂密，稠,|C2: 稠密|,"|E: compact, concentrated, dense, thick, condensed;densely, thickly;density|"
+|ES: elast,|J: 弾力のある,|C1: 有弹力的，有弹性的；柔软的,|C2: 松紧带|,"|E: elastic, springy|"
+|ES: mol,|J: 柔らかい,|C1: 软,|C2: 柔软的|,"|E: gentle, soft, tender, minor (music);gently, softly, tenderly;minor (music)|"
+|ES: dolĉ,|J: 甘い,|C1: 甜，甜美；温柔,|C2: 甜的|,"|E: gentle, soft, sweet, tender, mild;gently|"
+|ES: mild,|J: 温和な,|C1: 柔和，温和，温柔,|C2: 温和的|,"|E: gentle, mild;mildly|"
+|ES: glat,|J: なめらかな,|C1: 平滑；平坦；流畅,|C2: 光滑的|,"|E: sleek, slippery, smooth, slick;smoothly, sleekly|"
+|ES: delikat,|J: 繊細な,|C1: 精美，高雅；纤细，脆性的,|C2: 精美的|,"|E: delicate, fine, refined, gentle, sensitive, fragile, dainty, awkward;delicately|"
+|ES: subtil,|J: 微細な,|C1: 细腻；精细，微妙；缜密，细致，敏锐,|C2: 微妙的|,"|E: subtle;lightly, subtly|"
+|ES: ombr,|J: かげ,|C1: 阴影,|C2: 阴影|,"|E: shaded, shadowy, shady;shadowy;to cast a shadow, shade;shade, shadow, umbra|"
+|ES: nuanc,|J: ニュアンス,,|C2: 细微差别|,"|E: to shade;hue, nuance, shade, tint|"
+|ES: fulm,|J: 稲妻,|C1: 闪电,|C2: 闪电|,"|E: lightning;to flash, lighten;lightning|"
+|ES: polur,|J: 光沢,|C1: 光泽；抛光,|C2: 抛光|,"|E: to brighten, burnish, glaze, gloss, polish;luster, polish|"
+|ES: hel,|J: 明るい,|C1: 明亮，晴朗；浅，淡,|C2: 明亮的|,"|E: bright, brilliant, clear, light, vivid;brightly, clearly;brightness, brilliance|"
+|ES: lum,|J: 光っている,|C1: 发光,|C2: 光|,"|E: bright, light, luminous;to light, light up, shine;light|"
+|ES: bril,|J: 輝く,|C1: 发光；闪耀,|C2: 明亮的|,"|E: bright, brilliant, shining;brightly, brilliantly;to glisten, glow, shine, sparkle;brightness, gloss, sheen, luster, shine, brilliance|"

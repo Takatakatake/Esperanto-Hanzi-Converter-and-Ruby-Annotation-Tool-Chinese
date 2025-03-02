@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: neces,|J: 必要な,|C1: 必需；必然,|C2: 必要的|,"|E: necessary, needful, requisite;necessary;to be needed; to use the toilet;necessary (thing)|"
+|ES: bezon,|J: (を)必要とする,|C1: 需要,|C2: 需要|,"|E: necessary, needful, requisite, needed;necessarily;to need, require, want;need, want, lack, requirement|"
+|ES: dev,|J: (~)しなければならない,|C1: 必须,|C2: 必须|,"|E: to be obliged to, have to, must, ought to, should;duty, obligation|"
+|ES: end,|J: [接尾辞]必要,|C1: 必须被，应该被,|C2: 结尾|,|E: (denotes something to be done or which must be done);to be compulsory|
+|ES: aplik,|J: (を)応用する,|C1: 应用，实际运用；使用，采用,|C2: 应用|,"|E: application;to administer, apply, practice;application, employment, use|"
+|ES: uz,|J: (を)使う,|C1: 用,|C2: 使用|,"|E: to employ, use, make use of;consumption, usage, use|"
+|ES: dispon,|J: (を)自由に使う,|C1: （自主）处理、支配或决定；处置,|C2: 处理|,"|E: to absorb, have at one’s disposal, dispose (of), have available;disposition|"
+|ES: konsum,|J: (を)消費する,|C1: 耗尽，用尽；消费，消耗；食（饮）用,|C2: 消耗|,"|E: to consume, use up, exhaust;consumption|"
+|ES: barakt,|J: もがく,|C1: 挣扎；奋斗；竞争,|C2: 斗争|,"|E: strugglingly;to struggle (against), writhe, wrestle, move convulsively, convulse, flounder;struggle, fight|"
+|ES: pen,|J: 努力する,|C1: 努力，费力,|C2: 笔|,"|E: with difficulty, with effort;to aim, attempt, endeavor, try;effort, endeavor|"
+|ES: klopod,|J: 奔走する,|C1: 尽力，忙碌；奔走，奔忙,|C2: 努力|,"|E: to aim, attempt, endeavor, take steps, undertake, try;attempt, effort|"
+|ES: prov,|J: (を)試す,|C1: 试，尝试,|C2: 尝试|,"|E: tentative;tentatively;to attempt, test, try, essay;assay, attempt, test, trial, ordeal|"
+|ES: streb,|J: [に)全力をつくす,,|C2: 斗争|,"|E: to seek, strive for;effort|"
+|ES: aŭdac,|J: ずぶとい,|C1: 大胆，放肆，敢于冒险,|C2: 大胆的|,"|E: audacious, bold, daring, intrepid;boldly;to dare, have the audacity (to);audacity, boldness, daring|"
+|ES: kuraĝ,|J: 勇気ある,|C1: 勇敢,|C2: 勇气|,"|E: audacious, bold, brave, courageous, valiant, daring, fearless, intrepid;courageously;to be bold enough (to), dare, have courage, venture to;audacity, boldness, bravery, courage, mettle, fortitude, valor, spirit|"
+|ES: brav,|J: 勇敢な,|C1: 出类拔萃，能干，干练，英勇,|C2: 勇敢的|,"|E: brave, gallant, good, honest, stalwart, staunch, valiant, valorous, worthy;bravely;bravery, gallantry, valor|"
+|ES: diligent,|J: 勤勉な,|C1: 勤奋，努力,|C2: 勤奋地|,"|E: assiduous, diligent, hardworking, industrious, earnest;diligently;to apply oneself;diligence|"
+|ES: pacienc,|J: 我慢強い,|C1: 坚韧，耐心,|C2: 耐心|,|E: patient;patiently;to be patient;patience|
+|ES: persist,|J: 頑張る,|C1: 坚持（不懈）,|C2: 持久性|,"|E: perennial, persistent, retentive;habitually, persistently;to abide, persevere, persist;perseverance|"
+|ES: super,|J: (~の)上方に,|C1: 在…上方（不接触下方物体）；高（超）过；专注于,|C2: 多于|,"|E: above, over, superior;superior, supreme, top;to exceed, excel, prevail, surpass, outdo, top, be superior to;excellence;parent|"
+|ES: supr,|J: 頂上,|C1: 顶，上面,|C2: 顶部|,"|E: superior, upper, higher;above, on top, overhead, upstairs, aloft, up, upstairs;pinnacle, summit, surface, top, ridge, vertex|"
+|ES: lev,|J: (を)上げる,|C1: （举、抬、提）起；提高，提拔,|C2: 举起|,"|E: to lever, lift, raise;elevation, erection, uplift, rising, improvement, increase, ascension, raise, exaltation, state, lift|"
+|ES: grimp,|J: (に)よじ登る,|C1: 攀登，爬上,|C2: 爬|,|E: to climb|
+|ES: furor,|J: 大流行,,|C2: 愤怒|,"|E: hit, best-selling;to be all the rage, be a hit;blockbuster, craze, hit, fad|"
+|ES: sukces,|J: 成功する,|C1: 成功，成就,|C2: 成功|,"|E: successful;successfully;to succeed;achievement, success|"

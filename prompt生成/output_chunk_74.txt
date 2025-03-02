@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: border,|J: (を)縁取る,,|C2: 边界|,"|E: to border, fringe, hem;border, hem|"
+|ES: ekskomunik,|J: [宗](を)破門する,,|C2: 逐出教会|,"|E: to excommunicate;anathema, ban, excommunication|"
+|ES: ced,|J: 譲歩する,|C1: 让步，退让；让与,|C2: 放弃|,"|E: to cede, give in, yield, comply, concede, grant, accommodate;abandonment, cession, concession|"
+|ES: las,|J: (を)手放す,|C1: 留下，丢下，让，听任,|C2: 离开|,"|E: to allow, leave, let, release, quit|"
+|ES: rezign,|J: (権利などを)放棄する,|C1: 放弃，辞去,|C2: 放弃|,"|E: to abandon, give up, resign, renounce, yield, renounce, surrender, cancel;cession, relinquishment, renunciation, surrender, resignation|"
+|ES: abdik,|J: (を)退く,,|C2: 放弃|,"|E: abdication;to abdicate, resign;abdication|"
+|ES: ekzil,|J: (を)国外追放する,,|C2: 流亡|,"|E: to ban, banish, exile;exile, outcast|"
+|ES: emancip,|J: 解放する,,|C2: 解放|,|E: to emancipate;emancipation|
+|ES: dis,|J: [接頭辞]分散,|C1: 分散,|C2: 分裂|,"|E: disjoint;(denotes dispersal or separation);spread about, here and there;to be separate|"
+|ES: divid,|J: (を)分割する,|C1: 分；分配；[数学]除,|C2: 分配|,"|E: divisive;to divide, separate, share, split;division, partition|"
+|ES: distribu,|J: (を)分配する,|C1: 分配，分送，分给,|C2: 分发|,"|E: to allocate, apportion, distribute;distribution, distro|"
+|ES: ekstrakt,|J: 抜粋,,|C2: 提炼|,"|E: to extract, retrieve, rip;extract|"
+|ES: deriv,|J: (を)派生させる,,|C2: 衍生物|,"|E: derivative;to derive, differentiate|"
+|ES: dedukt,|J: 演繹する,,|C2: 扣除|,"|E: deductive;to deduce, gather;deduction|"
+|ES: esting,|J: (を)消す,|C1: 扑灭，熄灭,|C2: 熄灭|,"|E: to extinguish, put out, put out, quench;extinction|"
+|ES: solv,|J: (を)解決する,|C1: 溶解；解决，解答,|C2: 解决方案|,"|E: to dissolve, reduce, solve, ressolve;dissolution, solution|"
+|ES: kresk,|J: (に)成長する,|C1: 生长,|C2: 生长|,"|E: rising, ascending;to accrue, grow, increase, ascend;accretion, growth, stature|"
+|ES: veget,|J: 植生する,,|C2: 植物生长|,|E: to vegetate;growth|
+|ES: ekspluat,|J: 開発する,|C1: 开发，开采；剥削，榨取,|C2: 开发|,"|E: to exploit, leverage, take advantage of, utilize, work|"
+|ES: progres,|J: 進歩する,|C1: 进步，发展,|C2: 进步|,"|E: advanced, progressive;progressively;to advance, progress, proceed;advance, advancement, progress|"
+|ES: evolu,|J: 進化する,|C1: 进化，演化；发展,|C2: 发展|,"|E: evolutionary;to develop, evolve;development, evolution|"
+|ES: evoluci,|J: 進化,,|C2: 进化|,"|E: evolutionary;to evolve;development, evolution|"
+|ES: fal,|J: 落ちる,|C1: 落下，跌倒,|C2: 落下|,"|E: to drop, fall, topple;fall|"
+|ES: redukt,|J: (を)縮小する,|C1: 减少，减小，缩小，降低；使成为；使还原,|C2: 减少|,"|E: to reduce, scale down;reduction|"
+|ES: degrad,|J: (を)降格する,,|C2: 降解|,"|E: to degrade, demote, downgrade;degradation, demotion, reduction in ranks, relegation|"

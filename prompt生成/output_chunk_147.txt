@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: reakci,|J: 反動,|C1: 反动；反应；反作用（力）,|C2: 反应|,|E: reactionary;to react;reaction|
+|ES: efik,|J: 効果をあげる,|C1: 生效，起作用,|C2: 影响|,"|E: effective, effectual, efficacious;decisively, effectively;to act, be effective, have effect, work, effect;effect, result|"
+|ES: influ,|J: 影響を与える,|C1: 影响,|C2: 影响|,"|E: influential;to act, affect, influence, have influence on, shape, sway;action, influence|"
+|ES: konsekvenc,|J: 帰結,|C1: 自然结果，逻辑的或合理的相互联系,|C2: 最后|,"|E: consequent, consistent, logically following;accordingly, consequently, consistently, logically, therefore;consequence, consistency, consequent|"
+|ES: rezult,|J: (当然の結果として)起きる,|C1: 是…的结果，由…产生,|C2: 结果|,|E: consequently;to result;result|
+|ES: rezultat,|J: 結果,,|C2: 结果|,"|E: to result;conclusion, effect, result|"
+|ES: renkont,|J: (に)出会う,|C1: 碰到；对付,|C2: 会议|,"|E: to come across, encounter, meet, see;encounter, meeting|"
+|ES: tuŝ,|J: (に)触れる,|C1: 碰，触,|C2: 触碰|,|E: to touch;touch|
+|ES: kontakt,|J: 接触,,|C2: 接触|,|E: to contact;contact|
+|ES: traf,|J: (に)命中する,|C1: 命中，触及,|C2: 打|,"|E: striking;accurately, appropriately, graphically, relevant, on target, apt, to the point;to attain, catch, encounter, find, hit, run across, score, strike;hit, strike|"
+|ES: palp,|J: (を)手探りする,|C1: 摸，摸索；抚摸,|C2: 触诊|,"|E: by feel, by touch;to feel, grope, touch;feeling, touch|"
+|ES: atak,|J: (を)攻撃する,|C1: 进攻，袭击,|C2: 攻击|,"|E: aggressive, offensive;to assail, assault, attack, storm;attack, assault, fit, onset|"
+|ES: invad,|J: 侵入する,,|C2: 入侵|,|E: to invade;invasion|
+|ES: penetr,|J: 浸透する,|C1: 进入，穿入，深入，看透,|C2: 穿透|,"|E: penetrating;to penetrate, pervade, pierce;penetration|"
+|ES: infekt,|J: (を)感染させる,|C1: 传染；感染,|C2: 感染|,"|E: catching, contagious, infectious;to infect;infection, contagion|"
+|ES: gajn,|J: (を)かち取る,|C1: 赢得，取得,|C2: 获得|,"|E: winning;to gain, earn, profit, win;benefit, gain, profit, boon|"
+|ES: venk,|J: (に)勝つ,|C1: 战胜；克服,|C2: 赢|,"|E: to conquer, defeat, win over, overcome, vanquish, subdue;conquest, victory|"
+|ES: konker,|J: (を)征服する,,|C2: 征服|,"|E: to bring to subjection, conquer, gain, win, overcome by force, subjugate;conquest|"
+|ES: aĉet,|J: (を)買う,|C1: 买,|C2: 购买|,"|E: to acquire, buy, purchase, take over;acquisition, buy, purchase, taking over|"
+|ES: ricev,|J: (を)受取る,|C1: 收到，得到，受,|C2: 接待|,"|E: to get, have, receive, retrieve;reception|"
+|ES: akir,|J: (を)獲得する,|C1: 获得，得到,|C2: 获得|,"|E: to achieve, acquire, attain, get, obtain;accession, acquisition, asset, acquirement, attainment, gain, spoil, booty|"
+|ES: kapt,|J: (を)捕える,|C1: 捉，抓住,|C2: 抓住|,"|E: to capture, catch, grapple, trap, ensnare, clutch, grasp, grab;catch, prey|"
+|ES: arest,|J: (を)逮捕する,,|C2: 逮捕|,"|E: to apprehend, arrest, detain;apprehension, arrest, custody, detention|"
+|ES: ten,|J: (を)支え持つ,|C1: 持，握；容纳,|C2: 抓住|,"|E: to hang onto, hold, keep, retain;grasp, grip, hold|"
+|ES: pren,|J: (を)手に取る,|C1: 取，抓；对待,|C2: 拿|,"|E: to get, lay hold of, pick up, take;capture, clasp, grasp, trick (at cards)|"

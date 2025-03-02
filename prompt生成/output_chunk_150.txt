@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: cit,|J: (を)引用する,|C1: 引用；举出，列举,|C2: 引用|,"|E: to cite, quote, mention;quotation|"
+|ES: menci,|J: (を)言及する,|C1: 说起，提及，提到,|C2: 提及|,|E: to mention;mention|
+|ES: pasi,|J: 情熱,|C1: 热情，（强烈的）爱情，情欲,|C2: 通过|,"|E: passionate;passionately;lust, passion|"
+|ES: fervor,|J: 熱心な,|C1: 热心，热情,|C2: 热情|,"|E: ardent, fervent, full of zeal, zealous;earnestly, fervently;to be zealous;fervor, zeal, mettle|"
+|ES: entuziasm,|J: 熱狂,,|C2: 热情|,"|E: enthusiastic, rapt;eagerly, enthusiastically;to be enthusiastic about something;alacrity, enthusiasm|"
+|ES: sci/vol##,|J: 好奇心のある,|C1: 好奇,|C2: 知道/将会##|,
+|ES: interes,|J: (に)興味を持たせる,|C1: 使发生兴趣,|C2: 兴趣|,|E: interesting;interestingly;to interest;interest|
+|ES: interes##,|J: 興味,|C1: 使发生兴趣,|C2: 兴趣＃＃|,
+|ES: ambici,|J: 野心,,|C2: 雄心勃勃|,|E: ambitious;ambitiously;to have the ambition to;ambition|
+|ES: dezir,|J: (を)望む,|C1: 希求，想，祝愿,|C2: 希望|,"|E: to desire, wish, want;desire, want, wish|"
+|ES: esper,|J: (を)希望する,|C1: 希望，期望,|C2: 希望|,|E: in a hopeful way;to hope;hope|
+|ES: avid,|J: 渇望している,|C1: 渴望，热望,|C2: 贪婪的|,"|E: avid, eager, greedy;eagerly, avidly;to be avid, covet, crave, lust, want greatly, desire, yearn (for);avidity, covetousness, eagerness, greediness, greed|"
+|ES: aspir,|J: (を)熱望する,,|C2: 吸气|,"|E: to aspire (to), hope for, be ambitious of, be eager for, desire earnestly, seek after;ambition, aspiration|"
+|ES: apetit,|J: 食欲,|C1: 食欲,|C2: 食欲|,|E: appetizing;appetizingly;appetite|
+|ES: soif,|J: 喉が乾く,|C1: 渴；渴望,|C2: 口渴|,"|E: thirsty;thirstily;to be thirsty, thirst;thirst|"
+|ES: sopir,|J: (を)恋しがる,|C1: 怀念，想念；向往，渴望,|C2: 渴望|,"|E: longing;to ache, long for, yearn;longing|"
+|ES: verv,"|J: (芸術,精神活動の)情熱",,|C2: 气魄|,"|E: lively, vivacious;lively, racily, vibrantly;verve, vivacity, zest|"
+|ES: vigl,|J: 活発な,|C1: 活跃，精神焕发，活泼,|C2: 守夜|,"|E: adroit, agile, alert, brisk, keen, lively, nimble, vigilant, watchful;vigilantly;to flourish, thrive;vigil, watch|"
+|ES: aktiv,|J: 活動的な,|C1: 有能力的，有作用的；积极的，活动的；有效，特效,|C2: 积极的|,"|E: active, in action;actively;active (voice), assets|"
+|ES: nervoz,|J: [病]神経質な,|C1: 烦躁，紧张不安；神经质，神经过敏,|C2: 紧张的|,"|E: agitated, nervous;nervously|"
+|ES: nerv,|J: [解]神経,|C1: 神经,|C2: 神经|,"|E: agitated, nervous;nervously;nerve|"
+|ES: energi,|J: エネルギー,|C1: 精力，干劲；能,|C2: 活力|,"|E: energetic, strenuous;energetically;energy, spirit|"
+|ES: anim,|J: 魂,|C1: 灵魂，精神,|C2: 灵魂|,"|E: of the soul, spiritual;mentally;to animate, enliven, vitalize, inspire;soul, spirit|"
+|ES: spirit,|J: 精神,|C1: 精神（反：物质），灵魂,|C2: 精神|,"|E: incorporeal, mental, spiritual, witty, smart;mind, spirit|"
+|ES: mens,|J: 精神,|C1: 精神，心灵；智能，智力,|C2: 头脑|,|E: mental;mentally;mind|

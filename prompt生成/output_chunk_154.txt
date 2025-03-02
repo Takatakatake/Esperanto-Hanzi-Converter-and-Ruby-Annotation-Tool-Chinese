@@ -1,0 +1,88 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳 (C2)（google翻訳）  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - どうしても漢字1文字での割当が難しい場合は、2文字以上の熟語を作ってもよい。  
+  - それでも難しい場合は、その語根への割当をあえて行わない（未対応のままにする）という選択肢も認める。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字の種類(または偏旁)の総数をできるだけ抑える**  
+   - 漢字の重複割当は大歓迎。できる限り同じ漢字・偏旁を使い回す。
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本語圏の人にとっても意味がつかみやすい漢字・熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出(または今後の割当予定)の偏旁や漢字を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は既に他のエスペラント語根に対して割り当てている(もしくは別の回も含む他の箇所で割り当てることになるであろう、汎用性の高い)偏旁や漢字を組み合わせた熟語を検討する。  
+   - それでもなお難しければ、当該エスペラント語根への漢字割当は“未対応のまま”で構わない。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示しください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その字・熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の偏旁や漢字との関係、学習コストに関する考察**  
+   - すでに割り当て済みの偏旁や漢字を活用していれば、その点も記載  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/既出の偏旁や学習コストの考察
+エスペラント語根2/提案熟語/選定理由/既出の偏旁や学習コストの考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字・熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(偏旁総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+
+|ES: avantaĝ,|J: 有利な立場,|C1: 优越，优势；利益，方便,|C2: 优势|,"|E: advantageous;advantageously, to one’s advantage;advantage, benefit|"
+|ES: util,|J: 有用な,|C1: 有益，有利，有用,|C2: 有用|,"|E: advantageous, useful;usefully;to avail, be of use;advantage, benefit, usefulness, usage|"
+|ES: oportun,|J: 便利な,|C1: 便利，合适，适宜,|C2: 机会|,"|E: convenient, handy, opportune;advantageously, comfortably, conveniently, usefully, opportunely, handy;convenience, ease, handiness|"
+|ES: special,|J: 特別の,|C1: 特别，专门；专用,|C2: 特别的|,"|E: advanced, particular, special;expressly, particularly, specially|"
+|ES: ekstr,|J: 特別の,,|C2: 额外的|,"|E: additional, extra, spare|"
+|ES: sol,|J: 唯一の,|C1: 独自的；唯一的,|C2: 仅有的|,"|E: alone, only, sole, solitary, single;alone, just, only, solely;base, pedestal, plinth;Seoul;solo (musical)|"
+|ES: unik,|J: 特異な,|C1: 唯一，无比，无可匹敌,|C2: 独特的|,"|E: unique;singularly, uniquely|"
+|ES: apart,|J: 別々の,|C1: 单独的，个别的，分开的；特别的,|C2: 分开|,"|E: aloof, apart, distinct, distinctive, own, particular, separate, special;apart, separately, aside, asunder, particularly|"
+|ES: izol,|J: (を)孤立させる,|C1: 隔离，使孤立；使绝缘；隔绝,|C2: 隔离|,"|E: isolated, secluded;apart;to insulate, isolate, seclude|"
+|ES: fremd,|J: 他国の,|C1: 外国的；陌生,|C2: 外国的|,"|E: alien, foreign, strange;strangely, in a foreign way|"
+|ES: divers,|J: 様々な,|C1: 各种各样的,|C2: 各种各样的|,"|E: different, diverse, varied, various, sundry, miscellaneous;severally;to vary|"
+|ES: diferenc,|J: 異なる,|C1: 差异，不同,|C2: 不同之处|,"|E: different;differently;to be different, differ, disagree;difference|"
+|ES: ali,|J: 他の,|C1: 另外的,|C2: 别的|,"|E: other, another (one), different, else;differently, else, otherwise, in another way, (or) else;Ali;something else|"
+|ES: ceter,|J: 残りの,|C1: 其余，其他,|C2: 而且|,"|E: additional, remaining, rest of;as for the rest, besides, for the rest, moreover, what’s more, otherwise, aside from that, I might add;remainder|"
+|ES: ekskluziv,|J: 排他的な,,|C2: 独家的|,|E: exclusive;exclusively;to exclude;exclusion|
+|ES: escept,|J: (を)除外する,|C1: 排除，除外,|C2: 例外|,"|E: exceptional;apart from, but, except, other than, except, by way of exception;to except, exclude;exception, exclusion|"
+|ES: krom,|J: (の)ほかに,|C1: 除了,|C2: 除了|,"|E: accidental, additional, spare, complimentary, minor;apart from, besides, except, except for;besides, in addition, moreover, furthermore;to chrome(-plate);chromium|"
+|ES: ekster,|J: (の)外で,|C1: 在…之外,|C2: 外部|,"|E: external, outer, outside;aside from, apart from, out, outside (of), beyond;abroad, out, outside;exterior|"
+|ES: intern,|J: 内部の,|C1: 内部，内在,|C2: 内部的|,"|E: back-end, internal, domestic, inner, inside;in, inside, internally, within;inside, interior|"
+|ES: inkluziv,|J: 含んだ,,|C2: 包容性|,"|E: inclusive;including, inclusively;to include;inclusion|"
+|ES: hav,|J: (を)持っている,|C1: 有,|C2: 有|,"|E: to have, own;possession|"
+|ES: est,|J: (~)である,|C1: 存在；是,|C2: 是|,"|E: to be;being, entity|"
+|ES: ekzist,|J: 存在する,|C1: 存在,|C2: 存在|,|E: to exist;existence|
+|ES: posed,|J: (を)所有する,|C1: 拥有，占有；掌握,|C2: 拥有|,"|E: possessive;to own, possess;possession|"
+|ES: aparten,|J: (に)所属する,|C1: 属，属于,|C2: 属于|,"|E: belonging to, appurtenant;to belong to|"
