@@ -304,7 +304,7 @@ English version
 https://esperanto-kanji-converter-and-ruby-annotation-tool-english.streamlit.app/  
 日本語版  
 https://esperanto-kanji-converter-and-ruby-annotation-tool.streamlit.app/  
-中文版  
+**中文版**    
 https://esperanto-hanzi-converter-and-ruby-annotation-tool-chinese-dgw.streamlit.app/  
 한국어 버전  
 https://esperanto-kanji-converter-and-ruby-annotation-tool-korean-yrrx.streamlit.app/    
@@ -337,7 +337,7 @@ English version
 https://github.com/TakafumiYamauchi/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-English  
 日本語版  
 https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-  
-中文版  
+**中文版**    
 https://github.com/Takatakatake/Esperanto-Hanzi-Converter-and-Ruby-Annotation-Tool-Chinese  
 한국어 버전  
 https://github.com/Takatakatake/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-Korean  
