@@ -297,7 +297,7 @@ st.write("---")
 st.title("Ligilo-oj(URL-oj)")
 st.markdown("""
 #### Ligilo-oj de la aplikaĵo en aliaj lingvaj versioj (Esperanto, English, 日本語, 中文, 한국어, Русский, español, italiano, français, Deutsch, العربية, हिन्दी, polski, Tiếng Việt, Bahasa Indonesia; entute 14 lingvoj) ⇓  
-            
+              
 Esperanta versio    
 https://esperanto-kanji-converter-and-ruby-annotation-tool-esperanto.streamlit.app/  
 English version  
@@ -330,6 +330,7 @@ Versi Bahasa Indonesia
 https://esperanto-kanji-converter-and-ruby-annotation-tool-indonesian.streamlit.app/  
 
 #### Uzadaj instrukcioj de la aplikaĵo (README.md en la GitHub-deponejo) ⇓    
+  
 Esperanta versio  
 https://github.com/TakafumiYamauchi/Esperanto-Kanji-Converter-and-Ruby-Annotation-Tool-Esperanto  
 English version  
