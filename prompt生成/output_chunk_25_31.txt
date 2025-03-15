@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: interpunkci,|J: [文]句読法,,|C2: 标点|,"|E: punctuation;to punctuate;interpunction, punctuation|"
+|ES: stil,|J: 文体,|C1: 文笔，文风，风格,|C2: 风格|,|E: stylish;style|
+|ES: ideografi,|J: 表意文字方式,,|C2: 表意文字|,"|E: ideography, picture writing|"
+|ES: liter,|J: 文字,|C1: 字母,|C2: 信|,|E: alphabetic;to spell;letter (alphabet)|
+|ES: alfabet,|J: [文]アルファベット,|C1: 字母表,|C2: 按字母顺序|,"|E: alphabetic, alphabetical;alphabetically;alphabet|"
+|ES: aforism,|J: 警句,,|C2: 格言|,|E: aphoristic;aphoristically;aphorism|
+|ES: epigram,|J: 警句,,|C2: 警句|,|E: epigram|
+|ES: siluet,|J: シルエット,,|C2: 轮廓|,"|E: outline, silhouette|"
+|ES: spektr,|J: [理]スペクトル,,|C2: 光谱|,|E: spectrum|
+|ES: helic,|J: プロペラ,,|C2: 螺旋桨|,"|E: axially;helix, propeller|"
+|ES: spiral,|J: 螺旋,,|C2: 螺旋|,|E: spiral;to spiral;spiral|
+|ES: cikl,|J: 周期,|C1: 周期；组诗,|C2: 循环|,"|E: cyclic;cyclically;to cycle;cycle, bicycle, bike|"
+|ES: period,|J: [理]周期,|C1: 周期，时期，时代，阶段,|C2: 时期|,|E: periodic (function);periodically;period|
+|ES: procesi,|J: [宗]行列,,|C2: 处理|,|E: processial;to go in procession;procession|
+|ES: vic,|J: 列,|C1: 一列；队列,|C2: 排|,"|E: sequential;in rows, in succession;array, file, line, rank, row, turn, sequence;vice-, spare|"
+|ES: seri,|J: 連続,|C1: 一系列，一组；合订本,|C2: 系列|,"|E: serial;series, set|"
+|ES: spec,|J: 種類,|C1: 种类，品种,|C2: 种类|,"|E: kind, sort, form, species|"
+|ES: klasifik,|J: (を)分類する,,|C2: 分类|,"|E: to classify, sort;classification|"
+|ES: klas,|J: クラス,|C1: 阶级；班级；等级,|C2: 班级|,"|E: to classify, sort;class|"
+|ES: kategori,|J: カテゴリー,|C1: 种类，类别；范畴,|C2: 分类|,"|E: categorical, firm, peremptory, resolute;categorically;category|"
+|ES: sistem,|J: 体系,|C1: 体系，系统，制度,|C2: 系统|,"|E: system, systematic;system|"
+|ES: reĝim,|J: [政]政体,|C1: 政体，政治制度；制度,|C2: 政权|,"|E: mode, regime, regimen|"
+|ES: ord,|J: 順序,|C1: 次序，条理，秩序,|C2: 命令|,"|E: ordered, tidy, organized, systematic;orderly, in order;to arrange, categorize, collate, order, put in order, sort, tidy;order, ordering, sequence, arrangement|"
+|ES: hierarki,|J: 階級制度,,|C2: 等级制度|,|E: hierarchical;hierarchically;hierarchy|
+|ES: net,|J: 清書,|C1: 誊清的稿子,|C2: 网|,"|E: cleanly cut, neat, precise, net (weight, etc.), distinct;carefully prepared, in the final analysis;corrected copy, final copy|"

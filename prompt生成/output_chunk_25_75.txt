@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: kaduk,|J: 老朽の,|C1: 破旧，破败；衰老；不稳定，不可靠；失效，无效,|C2: 衰变|,"|E: decayed, decrepit, dilapidated, rickety, frail, fragile, inoperative;feebly|"
+|ES: degener,|J: [生]退化する,,|C2: 退化|,"|E: to degenerate, degrade, deteriorate;degradation, deterioration|"
+|ES: velk,|J: 枯れる,|C1: 枯萎，凋谢；衰弱，衰老,|C2: 枯萎|,"|E: faded, withered;to fade, wither;decay|"
+|ES: dekadenc,|J: 衰退,,|C2: 颓废|,"|E: decadent;to be decadent;decadence, decline, decay|"
+|ES: putr,|J: 腐敗する,|C1: 腐烂，腐败，腐朽；腐化，堕落,|C2: 烂|,"|E: addled, bad, rotten, decaying, festering, putrefying;to decay, decompose, putrefy, rot, fester;corruption|"
+|ES: pere,|J: 破滅する,|C1: 死亡，丧生；沉没,|C2: 通过|,"|E: to perish;destruction, doom, downfall, fall, perdition, ruin, wreck|"
+|ES: bankrot,|J: 破産する,,|C2: 破产|,"|E: bankrupt;to be bankrupt, go broke, fail;bankruptcy, failure|"
+|ES: akcel,|J: (を)加速する,|C1: 加速，促进,|C2: 加速度|,"|E: accerlerative;to accelerate, advance, further, hasten, promote, speed up;acceleration|"
+|ES: impet,|J: 突進する,|C1: 突进，冲刺,|C2: 势头|,"|E: impetuous;to be impetuous, bound, dash, spring, leap, rush;impetus, rush, impulse|"
+|ES: impuls,|J: 衝撃,|C1: 推进力；脉冲；冲动,|C2: 冲动|,"|E: impulsive;impulsively;to impel;access, impetus, impulse|"
+|ES: puŝ,|J: (を)押す,|C1: 推,|C2: 推|,"|E: to push, thrust, shove;impulse, push|"
+|ES: ŝov,|J: (を)押しやる,|C1: 推，推动,|C2: 放|,"|E: to push along, shove, thrust, shift;shift (computer), thrust|"
+|ES: prem,|J: (を)押える,|C1: 压，挤；压迫,|C2: 压力|,"|E: burdensome, onerous, tight, oppressive, pressing;oppressively, tightly;to press, oppress, squeeze, grasp, push, hold down, depress, hit (a key);press, pressure|"
+|ES: trud,|J: (を)押し付ける,|C1: 强加…于；强使（某人）接受,|C2: 力量|,"|E: aggressive, coercive, forceful;aggressively;to assert, coerce, force, impose, thrust;coercion, imposition, intrusion|"
+|ES: streĉ,|J: (を)緊張させる,|C1: 拉紧，张紧；拉，压，扭,|C2: 紧的|,"|E: taut;tightly;to stretch, wind up (watch, clock), tense;stress, tension|"
+|ES: urĝ,|J: さし迫る,|C1: 紧催，敦促；急忙，紧迫,|C2: 紧迫的|,"|E: pressing, urgent;urgently;to hurry, press, urge;craving, stress|"
+|ES: insist,|J: 固執する,|C1: 坚持（意见或要求），主张,|C2: 坚持|,"|E: emphatic, insistent;insistently;to insist;insistence, pressure, urgency|"
+|ES: persekut,|J: (を)迫害する,|C1: 追逼，逼逐，迫害,|C2: 迫害|,"|E: oppressive;to chase, persecute, prosecute, pursue;persecution, pursuit|"
+|ES: impon,|J: (を)威圧する,,|C2: 感人的|,"|E: imposing, impressive;to impress forcibly, strike|"
+|ES: ribel,|J: 反乱する,|C1: 反抗，造反，反叛，叛乱，暴动,|C2: 叛乱|,"|E: mutinous, rebellious, riotous;to rebel;insurrection, mutiny, rebellion, revolt, sedition, riot|"
+|ES: revoluci,|J: [政]革命を起こす,|C1: 举行革命，造反，起义,|C2: 革命性的|,|E: revolutionary;to revolt;revolution|
+|ES: parad,|J: [軍]分裂行進する,,|C2: 游行|,"|E: pretentious;to display, parade;display, parade, review, show, pageant|"
+|ES: kapitulac,|J: [軍]降伏する,,|C2: 投降|,"|E: to capitulate, surrender, yield, give up, resign;capitulation|"
+|ES: pendol,|J: 振子,|C1: 摆，摆锤；秋千,|C2: 摆|,|E: to swing;pendulum|
+|ES: oscil,|J: 振動する,,|C2: 摆动|,|E: to oscillate;oscillator|

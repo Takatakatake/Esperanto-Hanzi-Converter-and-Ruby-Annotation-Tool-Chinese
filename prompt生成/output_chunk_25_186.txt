@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: baz,|J: 基礎,|C1: （地）基，基础，基地,|C2: 根据|,"|E: basic;basically, essentially;to base, be based;base, basis, footing, ground, platform, stem, radix|"
+|ES: fundament,|J: 基礎,|C1: 基础，地基,|C2: 基础|,"|E: foundational, fundamental, base, basis;basically, fundamentally;to base, establish, found;element, foundation|"
+|ES: esenc,|J: 本質,|C1: 本质，实质，核心,|C2: 本质|,"|E: essential;basically, essentially, inherently, innately, intrinsically;essence, gist, substance, bottom line|"
+|ES: princip,|J: 原則,|C1: 本原，起源；原理，原则,|C2: 原则|,"|E: firm in one’s principle, firm in one’s principles;in principle;principle|"
+|ES: ek,|J: [接頭辞]開始,|C1: 开始或突然发生,|C2: 开始|,"|E: abrupt;away we go, let’s start;(denotes an action which begins or is of short duration);(denotes the beginning of an action or that something is momentary);to begin, come on, set in, start;beginning, commencement, inception, opening, outset, start|"
+|ES: iniciat,|J: (を)発起する,|C1: 创始，发起,|C2: 倡议|,"|E: to initiate, start;initiative|"
+|ES: komenc,|J: (を)始める,|C1: 开始,|C2: 开始|,"|E: initial;at first, at the outset, in the beginning, to begin with;to begin, commence, start;beginning, commencement, start, debut, outset|"
+|ES: start,|J: [遊]スタートする,|C1: 起跑，开始，出发；开动，发动（机器等）,|C2: 开始|,"|E: to start (off);kickoff, start, takeoff|"
+|ES: apertur,|J: 開口部,|C1: 物体进出口，开度，光圈,|C2: 光圈|,"|E: apertural;aperture, opening|"
+|ES: inaŭgur,|J: (の開始)式を行う,,|C2: 就职|,"|E: inaugural;to inaugurate;inauguration, opening|"
+|ES: inaŭguraci,|J: (開会などの)式,,|C2: 揭幕|,|E: inaugural;to inaugurate;inauguration|
+|ES: membr,|J: 会員,|C1: 肢；成员，会员,|C2: 成员|,"|E: limb, member, term|"
+|ES: an,|J: [接尾辞]会員,|C1: 成员,|C2: 一个|,"|E: (denotes a member, inhabitant, or partisan);member, supporter, item, entry;to be a member of|"
+|ES: er,|J: [接尾辞]粒子,|C1: 某物的构成分子,|C2: 呃|,"|E: (denotes the unit of the whole);element, fragment, item, entry, particle, item, unit, piece, grain, component, segment; era|"
+|ES: element,|J: 要素,|C1: 元素；成分；原理，初步,|C2: 元素|,"|E: elemental, elementary, primary;elementally, elementarily, primarily;element, entry, item|"
+|ES: ingredienc,|J: 成分,,|C2: 原料|,"|E: component, element, ingredient, part|"
+|ES: ekip,|J: (を)装備する,|C1: 装备，配备，分配给,|C2: 设备|,"|E: to equip, outfit;equipment|"
+|ES: aparat,|J: 装置,|C1: 一套装置，仪器,|C2: 设备|,"|E: apparatus, device, set, appliance, machine, system|"
+|ES: rimed,|J: 手段,|C1: 手段，方法,|C2: 资源|,"|E: means, remedy, resources|"
+|ES: instrument,|J: 器具,|C1: 用具，仪器,|C2: 乐器|,|E: instrumental;to orchestrate;instrument|
+|ES: il,|J: [接尾辞]道具,|C1: 工具,|C2: 工具|,"|E: (denotes the instrument by which something is done);they;agent, means, tool, implement, instrument|"
+|ES: ĉio,"|J: すべて(もの,こと;一括)",,|C2: 一切|,
+|ES: tio,"|J: それ,あれ(もの,こと;一括)",,|C2: 那|,
+|ES: tio ĉi##,"|J: これ(もの,こと;一括)",,|C2: 这＃＃|,
+|ES: nenio,"|J: 何も~ない(もの,こと;一括)",,|C2: 没有什么|,

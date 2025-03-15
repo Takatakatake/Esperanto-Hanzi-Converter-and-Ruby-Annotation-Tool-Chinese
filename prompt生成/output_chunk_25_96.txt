@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: impost,|J: 税,|C1: 税,|C2: 税|,"|E: fiscal, tax;to assess, charge a tax, levy a tax, tax;duty, impost, tax|"
+|ES: dogan,|J: 関税,|C1: 关税；海关,|C2: 海关|,|E: customs;customs (duty at border)|
+|ES: aĝi,|J: [商]打ち歩,,|C2: 年龄|,"|E: agio, exchange premium|"
+|ES: helik,|J: [動]カタツムリ,,|C2: 蜗牛|,"|E: at sign, commercial at, @|"
+|ES: trust,|J: [商]トラスト,,|C2: 相信|,|E: business trust|
+|ES: makler,|J: [商]仲買をする,,|C2: 经纪人|,"|E: to act as a middleman, act as broker, broker;broker, brokerage, commission|"
+|ES: komerc,|J: (を)商売する,|C1: 经商，做买卖,|C2: 商业|,"|E: mercantile, proprietary;to deal, do business, trade;business, commerce, trade|"
+|ES: negoc,|J: [商]取引,,|C2: 商业|,"|E: business, commercial;to do business, engage in business, negotiate, deal, trade;business, trade, commerce, transaction|"
+|ES: fabrik,|J: 工場,|C1: 制造厂，工厂,|C2: 工厂|,"|E: to fabricate, manufacture;fabric, factory, manufacture|"
+|ES: manufaktur,|J: 手工業制工場,,|C2: 制造业|,"|E: factory, manufactory, works|"
+|ES: maŝin,|J: 機械,|C1: 机器，机械,|C2: 机器|,"|E: automatic;mechanically;engine, machine|"
+|ES: aŭtomat,|J: 自動装置,|C1: 自动装置，自动机,|C2: 自动的|,"|E: automatic;automatically;acceptor, automate, automaton|"
+|ES: central,|J: 中央施設,|C1: 动力厂，电站,|C2: 中央|,"|E: central;central office, exchange (telephone), power station|"
+|ES: motor,|J: モーター,|C1: 发动机，摩托，引擎；动力,|C2: 引擎|,"|E: engine, motor|"
+|ES: lokomobil,|J: [農]移動式蒸気機関,,|C2: 机车|,|E: traction engine|
+|ES: asperg,|J: (に)水をやる,,|C2: 撒|,"|E: to asperse, atomize, spray, sprinkle, water|"
+|ES: akv,|J: 水,|C1: 水,|C2: 水|,"|E: aquatic, of water, aqueous, watery;to irrigate, water;water|"
+|ES: hidrostatik,|J: 流体静力学,,|C2: 静水压力|,|E: hydrostatic;hydrostatically;hydrostatics|
+|ES: likv,|J: [理]液体,|C1: 液体,|C2: 液体|,|E: liquid;liquid|
+|ES: fluid,|J: 流体,|C1: 流体,|C2: 体液|,"|E: fluid, liquid;fluid, liquid|"
+|ES: kurent,|J: [理]電流,|C1: 电流,|C2: 当前的|,"|E: current (electric), power (energy)|"
+|ES: flu,|J: 流れる,|C1: 流，流动,|C2: 流动|,"|E: fluent, fluid, seamless (integration);fluently, fluidly;to flow, run, stream;current, flow, stream, feed|"
+|ES: torent,|J: 急流,|C1: 激流，急流，湍流，奔流，洪流,|C2: 激流|,"|E: torrential;nonstop, continuously;to flow;stream, torrent, volley|"
+|ES: frost,|J: 厳寒,|C1: 严寒，冰冻；心寒,|C2: 霜|,"|E: freezing, frosty, raw, chilly;to freeze;freezing cold, frost|"
+|ES: prujn,|J: 霜,,|C2: 普鲁因|,"|E: frosted, hoar;frost|"

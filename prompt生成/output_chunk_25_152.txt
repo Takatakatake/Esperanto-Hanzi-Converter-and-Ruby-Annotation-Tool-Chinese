@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: karakteriz,|J: (を)特色づける,,|C2: 特征|,|E: characteristic;characteristically;to characterize;profile|
+|ES: atribut,|J: 属性,,|C2: 属性|,"|E: to attribute;property, attribute|"
+|ES: karakter,|J: 性格,|C1: 性质，特征；性格,|C2: 特点|,"|E: characteristic;character, nature, personality, temper, habitual conduct, individuality, moral strength, personality, reputation|"
+|ES: ec,|J: [接尾辞]性質,|C1: 性质,|C2: 电子商务|,"|E: -ish;(denotes an abstract concept);property, quality, attribute, qualification|"
+|ES: funkci,|J: 機能,|C1: 职能，职务；作用，功能；函数,|C2: 发挥作用|,"|E: functional;functionally;to function, operate, run, work;function, capability|"
+|ES: volupt,|J: 官能,,|C2: 欲望|,"|E: voluptuous;sensually, sensuously, voluptuously;lust, sexual pleasure|"
+|ES: pov,|J: (~することが)できる,|C1: 能；可以,|C2: 力量|,"|E: capable of, able to;to be able, can;ability, power|"
+|ES: talent,|J: 才能,,|C2: 天赋|,"|E: accomplished, talented, gifted;ability, accomplishment, aptitude, disposition, talent|"
+|ES: kapabl,|J: 有能な,|C1: 有能力的，能够…的,|C2: 有能力的|,"|E: able, capable, apt, qualified;ably, aptly;to be able, be able to;ability, capability, capacity, competence, competency, faculty, skill|"
+|ES: kompetent,|J: 適任の,|C1: 能干的，有能力的，有专长的，能胜任的,|C2: 胜任的|,"|E: able, accomplished, competent, proficient, adept, capable, efficient, qualified;capably, efficiently;to be capable, be competent;ability, competence, qualification|"
+|ES: merit,|J: (に)価する,|C1: 值得，应得,|C2: 优点|,"|E: meritorious, worthy;to be worthy of, deserve, merit;merit, worth|"
+|ES: ind,|J: [接尾辞]価値,|C1: 值得被…的,|C2: 印地语|,"|E: deserving, worthy;(denotes worthiness, merit);worthily;to be worth, be worthy of, be deserving;value, worth|"
+|ES: kost,|J: (に)価する,|C1: 值,|C2: 成本|,"|E: dear, expensive, costly, expensive, high-priced;to cost;charge, price, cost|"
+|ES: valor,|J: 価値,|C1: 价值；值,|C2: 价值|,"|E: valuable;to be of value, be worth;value, worth|"
+|ES: ŝat,|J: (の)価値を認める,|C1: 喜欢，重视，器重,|C2: 喜欢|,"|E: to appreciate, like, prize, value, esteem, think highly of, relish;appreciation, high opinion, reputation|"
+|ES: taks,|J: (を)評価する,|C1: 评价，衡量，估计,|C2: 估计|,"|E: rating;to appraise, estimate, rate, assess, tax, value, evaluate;assessment, toll, tax|"
+|ES: dign,|J: 尊厳,,|C2: 尊严|,"|E: dignified;dignity, respect, self-worth, self-respect, worth|"
+|ES: estim,|J: (を)尊敬する,|C1: 尊重，敬重，敬仰,|C2: 尊重|,"|E: to esteem, think well of, have esteem for, respect, regard;esteem, regard, respect|"
+|ES: respekt,|J: (を)尊敬する,|C1: 尊重；尊敬,|C2: 尊重|,|E: respectful;to respect;respect|
+|ES: fier,|J: 誇りたかい,|C1: 自豪，得意；骄傲，自负,|C2: 自豪的|,"|E: proud, haughty;proudly;to be proud;pride|"
+|ES: hont,|J: (を)恥じる,|C1: 感到羞耻，害羞，羞愧,|C2: 耻辱|,"|E: ashamed;ashamedly;to be ashamed;abashment, shame|"
+|ES: kar,|J: 親愛な,|C1: 亲爱的，珍贵，昂贵,|C2: 卡爾|,"|E: beloved, cherished, dear, expensive, valuable, precious, costly, high-priced|"
+|ES: ĉarm,|J: 魅力的な,|C1: 娇艳，妩媚，迷人,|C2: 魅力|,"|E: attractive, charming, lovely, pleasing, alluring;charmingly;to charm, entrance;charm, spell|"
+|ES: bel,|J: 美しい,|C1: 美丽，漂亮；美好,|C2: 美丽的|,"|E: beautiful, fine, handsome, lovely, good-looking, pretty;beautifully;to be beautiful;beauty; bel (unit of intensity);Bell|"
+|ES: graci,|J: 優美な,|C1: 优美，文雅；苗条,|C2: 恩惠|,"|E: graceful, gracious, slender, slim;gracefully, graciously;grace;Grace|"

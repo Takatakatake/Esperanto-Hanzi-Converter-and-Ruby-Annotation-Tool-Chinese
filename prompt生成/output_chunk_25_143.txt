@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: intenc,|J: (を)意図する,|C1: 想，打算，企图,|C2: 意图|,"|E: intentional;deliberately, on purpose, intentionally;to intend, mean, purpose;intention, meaning, plan, design|"
+|ES: cel,|J: 目的,|C1: 目的，目标，宗旨,|C2: 目标|,"|E: aimed, apt;destination;effective, telling;to aim (at, for), mean (to say), target, intend, aspire, strain after;aim, goal, purpose, target, purpose, objective, aspiration|"
+|ES: tendenc,|J: 傾向,|C1: 习性，本性；倾向,|C2: 趋势|,"|E: biased, partisan;to tend;tendency, bias, trend|"
+|ES: inklin,|J: 傾向のある,|C1: 倾向于…，有…倾向,|C2: 倾向|,"|E: inclined, prone;to be inclined (to do something, toward something);disposal, inclination, tendency, inclination, predisposition, proneness, propensity, tendency, slope|"
+|ES: em,|J: [接尾辞]傾向,|C1: 倾向于…的，习惯…的,|C2: 哦|,"|E: inclined to;(denotes a disposition or inclination);to be inclined to, have a tendency to;inclination, tendency, propensity|"
+|ES: pozitiv,|J: 積極的な,,|C2: 积极的|,|E: positive;positively;positive|
+|ES: objektiv,|J: 客観的な,,|C2: 客观的|,|E: objective;objectively;objective|
+|ES: subjektiv,|J: 主観的な,,|C2: 主观|,|E: subjective;subjectively|
+|ES: grav,|J: 重要な,|C1: 重要；严重,|C2: 重要的|,"|E: important, serious, grave, notable, important;seriously, importantly;to be serious, be important;engraving|"
+|ES: precip##,|J: 特に主要な,|C1: 最主要的，特别重要的；[~e]特别是，尤其是,|C2: 降水量##|,
+|ES: precip,"|J: 特に,主要な",|C1: 最主要的，特别重要的；[~e]特别是，尤其是,|C2: 特别的|,"|E: chief, main, predominant, principal;above all, especially, chiefly, mainly, principally, chiefly, particularly|"
+|ES: koncentr,|J: (を)集中する,|C1: 集中；集结或集合；浓缩,|C2: 集中|,|E: concentric;to concentrate;concentration|
+|ES: centraliz,|J: 集中する,,|C2: 集中|,|E: to centralize|
+|ES: mez,|J: まん中,|C1: 中间,|C2: 中间|,"|E: average, mean, middle, medium, central;amid, amidst, rather;average, mean, middle|"
+|ES: centr,|J: 中心,|C1: 中心点，圆心，中点；中心,|C2: 中心|,"|E: central;centrally;to center, centralize, concentrate;center|"
+|ES: ad##,|J: [接尾辞]継続,|C1: 继续，反复,|C2: 广告＃＃|,
+|ES: ad,"|J: [接尾辞]行為,継続",|C1: 继续，反复,|C2: 广告|,"|E: Ada;continual;(denotes continuation or constant repetition of an action);continually, continuously, repeatedly, often;to keep (on), continue|"
+|ES: kontinu,|J: 連続的な,,|C2: 连续的|,"|E: lasting, continuous;continuously;to be continuous, continue, last|"
+|ES: daŭr,|J: 継続,|C1: 持续的时间,|C2: 继续|,"|E: abiding, lasting, enduring, continuous, permanent, constant, persistent;constantly, continually, continuously;to continue, endure, keep on, last, go on, persist;duration, space (time), lapse (of time)|"
+|ES: solidar,|J: 連帯の,|C1: 连带责任的，共同负责的,|C2: 团结|,"|E: interdependent, jointly responsible, standing together;solidarity|"
+|ES: korelativ,|J: 相関的な,,|C2: 对应词|,"|E: correlated, correlative;correlative|"
+|ES: rilat,|J: 関係する,|C1: 与…有关系；对待,|C2: 有关的|,"|E: related (to), concerning, relational, relevant;as to, as regards, concerning, with respect to;to concern, relate;correspondence, quotient, ratio, relation, relationship|"
+|ES: koncern,|J: (に)関係がある,|C1: 涉及，关系到,|C2: 担心的|,"|E: concerned, in question;about, concerning, as to;to concern, involve;concern|"
+|ES: de/pend##,|J: (に)依存する,|C1: 依赖，依靠；取决于；从属于,|C2: 从/挂##|,
+|ES: laŭ,|J: (に)沿って,|C1: 沿着；按照,|C2: 根据|,"|E: according as, according to, as, by, along, in accordance with;similar, like; transverse, cross-;accordingly, in the same way, similarly|"

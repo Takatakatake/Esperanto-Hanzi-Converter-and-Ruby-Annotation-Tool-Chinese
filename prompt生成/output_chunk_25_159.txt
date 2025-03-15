@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: plen/um##,|J: (を)果たす,|C1: 完成，执行，履行,|C2: 全/嗯##|,
+|ES: nov,|J: 新しい,|C1: 新,|C2: 新的|,"|E: new, novel, recent;newly|"
+|ES: freŝ,|J: 新鮮な,|C1: 新鲜，鲜嫩，新近,|C2: 新鲜的|,"|E: fresh, new, recent, raw;freshly|"
+|ES: nur,|J: ただ~だけ,|C1: 仅仅，只有,|C2: 仅有的|,"|E: mere, solitary, sole, pure;merely;exclusively, just, only, simply|"
+|ES: ĵus,|J: たった今,|C1: 刚才，刚刚,|C2: 最近|,"|E: recent;just (now), a moment ago;predecessor|"
+|ES: subit,|J: 不意の,|C1: 突然的,|C2: 突然|,"|E: abrupt, sudden, instantaneous;all of a sudden, suddenly|"
+|ES: abrupt,|J: 突然の,|C1: 猛然的，出其不意的,|C2: 突然|,"|E: abrupt;abruptly;haste, abruptness|"
+|ES: provizor,|J: 臨時の,,|C2: 暂时的|,"|E: provisional, temporary, tentative;for the time being, temporarily|"
+|ES: moment,|J: 瞬間,|C1: 片刻，瞬间,|C2: 片刻|,"|E: momentary;for the moment, in an instant, momentarily;instant, moment|"
+|ES: konstant,|J: 不変の,|C1: 恒定，不变，坚贞,|C2: 持续的|,"|E: constant, continual, permanent, sustained, steadfast;constantly, continuously;constant|"
+|ES: etern,|J: 永遠の,|C1: 永恒，无穷,|C2: 永远|,"|E: endless, eternal, everlasting, perpetual, never-ending;forever, eternally;eternity|"
+|ES: nepr,|J: 必然の,|C1: 必然的，绝对必要的，不可避免的,|C2: 必须|,"|E: absolute, required;absolutely, definitely, without fail, certainly, surely;to be absolute, definite|"
+|ES: absolut,|J: 絶対の,|C1: 独裁，专制；绝对，完全,|C2: 绝对地|,"|E: absolute, stark, unconditional;absolutely;an absolute|"
+|ES: dekstr,|J: 右の,|C1: 右，右边,|C2: 正确的|,"|E: right, right-hand;on the right;starboard|"
+|ES: just,|J: 正義の,|C1: 公正，公平，正直,|C2: 只是|,"|E: fair, just, righteous, equitable;fairly, justly, rightly;equity, justice, righteousness|"
+|ES: prav,|J: 正当な,|C1: 正确，正当,|C2: 正确的|,"|E: correct, right, just, justified, true;correctly, rightly;to be right|"
+|ES: ĝust,|J: 正しい,|C1: 正确；恰当,|C2: 正确的|,"|E: correct, exact, proper, right;correctly, just, exactly, okay, right, precisely;to be right, be correct, be proper|"
+|ES: valid,|J: [法]有効な,|C1: 有效，生效,|C2: 有效的|,|E: valid;validly;to be valid|
+|ES: ja,|J: 実に,|C1: 确实；诚然,|C2: 的确|,
+|ES: ver,|J: 本当の,|C1: 真，实在,|C2: 看|,"|E: genuine, intrinsic, true, veritable, authentic;absolutely, genuinely, indeed, really, truly;to be true;reality, truth|"
+|ES: aŭtentik,|J: 真正の,,|C2: 真正的|,"|E: authentic, genuine;authentically, genuinely;authenticity|"
+|ES: fakt,|J: 事実,|C1: 事实,|C2: 事实|,"|E: actual, factual, real;actually, as a matter of fact, indeed, in fact;fact|"
+|ES: efektiv,|J: 現実の,|C1: 实际，确实；正式,|C2: 有效的|,"|E: actual, real, effective, effectual, true;absolutely, actually, in fact, effectively, really, as a matter of fact|"
+|ES: real,|J: 現実の,|C1: 真实，真，真正；现实，实际,|C2: 真实的|,"|E: actual, practical, real;genuinely, indeed, really, truly;reality|"
+|ES: virg,|J: 純潔な,|C1: 童贞的，处女的，未经开垦的，未经污染的,|C2: 处女|,"|E: virgin, virginal;Virgo|"

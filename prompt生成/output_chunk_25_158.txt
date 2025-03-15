@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: aktual,|J: 現存の,|C1: 当前，现在，现实，实际,|C2: 当前的|,"|E: contemporary, current, present(-day) topical, up-to-date, live;at present|"
+|ES: nun,|J: 今,|C1: 现在,|C2: 现在|,"|E: actual, current, present;at present, now;at present, currently, nowadays;the present (as opposed to the past or future)|"
+|ES: modern,|J: 現代の,|C1: 现代，近代,|C2: 现代的|,"|E: modern, leading edge, advanced;modernity|"
+|ES: mod,|J: 流行,|C1: 时尚，时髦,|C2: 时尚|,"|E: fashionable;fashion, mode, mood|"
+|ES: popular,|J: 人気のある,|C1: 普及的，通俗；大众的；流行；风行,|C2: 受欢迎的|,|E: popular;popularly|
+|ES: publik,|J: 公衆,|C1: 公众；观（听）众，读者,|C2: 民众|,"|E: public, public-domain;openly, publicly;public|"
+|ES: vulgar,|J: 通俗の,,|C2: 庸俗|,"|E: coarse, common, vulgar, underbred, rude, everyday, proletarian;commonly|"
+|ES: komun,|J: 共通の,|C1: 公共，共同,|C2: 常见的|,"|E: common, joint, shared, generic;jointly, mutually|"
+|ES: ĝeneral,|J: 全般の,|C1: 关于全体的，全面的，总的，普遍，一般的,|C2: 一般的|,"|E: general, generic, usual, rife, prevalent, widespread;generally, in general|"
+|ES: universal,|J: 普遍的な,|C1: 通用，普遍，万能；全球，全世界,|C2: 普遍的|,"|E: general, universal, worldwide;universally|"
+|ES: bon,|J: 良い,|C1: 好,|C2: 好的|,"|E: good, nice, okay, kind, nice;well, ok, alright, fine;to be good, be okay, be nice;good|"
+|ES: eminent,|J: 優れた,|C1: 卓越，杰出；优质，优良,|C2: 突出地|,"|E: distinguished, eminent, prominent;eminently, fine, very well|"
+|ES: skrupul,|J: 細心,,|C2: 顾忌|,"|E: accurate, scrupulous, conscientious;conscientiousness, scrupulousness|"
+|ES: preciz,|J: 正確な,|C1: 精确，精密，确切,|C2: 确切地|,"|E: accurate, precise, exact;exactly, sharp, precisely;precision, exactness, accuracy|"
+|ES: ekzakt,|J: 精密な,|C1: 准确，精确,|C2: 确切地|,"|E: accurate, exact;exactly;accuracy|"
+|ES: cert,|J: 確かな,|C1: 有把握的；确实的,|C2: 当然|,"|E: certain, sure, unerring;certainly, surely;to be certain|"
+|ES: konkret,|J: 具体的な,,|C2: 具体的|,"|E: concrete, not abstract, perceptible, real, positive;concretely|"
+|ES: spert,|J: 経験を積んだ,|C1: 有经验，熟练,|C2: 经验|,"|E: accomplished, adept, experienced, expert, conversant, skilled;to experience, go through, live to see;experience|"
+|ES: praktik,|J: 実践,|C1: 实践，实际,|C2: 实践|,"|E: practical;in practice;to exert, practice, put into practice;practice|"
+|ES: eksperiment,|J: 実験,|C1: 实验,|C2: 实验|,"|E: experimental;as an experiment, experimentally;to experiment;experiment|"
+|ES: pret,|J: 用意の整った,|C1: 准备好的,|C2: 准备好|,"|E: finished, ready, through, prepared;to be ready|"
+|ES: prepar,|J: (を)用意する,|C1: 准备，准备好,|C2: 准备|,"|E: preliminary, preparatory, prior;to prepare;preparation|"
+|ES: fin,|J: (を)終える,|C1: 结束；完成,|C2: 结尾|,"|E: final;at last, finally, ultimately, finally, in the final analysis, when all is said and done;to end, finish, terminate, close, conclude;end, ending;Fraŭlino|"
+|ES: ating,|J: (に)着く,|C1: 到达，达到；做到,|C2: 成就|,"|E: to accomplish, achieve, attain, get, reach, overtake, obtain, access (database, disk);accomplishment, achievement, attainment, access|"
+|ES: far,|J: (を)する,|C1: 做；造；使……成为,|C2: 做|,"|E: by (in passive constructions);in doing, having been done, having been made;to achieve, act, do, make, perform, build;accomplishment, achievement, act, action, deed|"

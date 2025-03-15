@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: pur,|J: 純粋な,|C1: 纯；干净,|C2: 干净的|,"|E: clean, pure, neat, unadulterated;purely|"
+|ES: ĉast,|J: 貞節な,,|C2: 贞洁|,"|E: chaste, pure;chastely, purely;chastity, purity|"
+|ES: banal,|J: ありふれた,,|C2: 平庸|,"|E: banal, commonplace, dismal, trite|"
+|ES: krud,|J: 生の,|C1: 生的，天然，未加工的，粗鲁,|C2: 生的|,"|E: crude, raw, rough, unbleached, uncooked, uncut, virgin, natural, primitive;in the rough|"
+|ES: sovaĝ,|J: 野生の,|C1: 野生，原始,|C2: 荒野|,"|E: savage, wild, untamed;wildly, savagely|"
+|ES: aplomb,|J: 落ち着き,,|C2: 泰然自若|,"|E: unmoved;aplomb, self-assurance, nerve|"
+|ES: flegm,|J: 冷静,,|C2: 痰|,"|E: impassive, passive, stolid, indifferent, calm;passively, calmly, indifferently;apathy, indifference, phlegm, stolidity, composure, calmness|"
+|ES: seren,|J: おだやかな,|C1: 宁静，晴朗；安详，从容,|C2: 安详|,"|E: calm, serene, untroubled;calmly, composedly, peacefully, placidly, serenely;calmness, serenity|"
+|ES: trankvil,|J: 平静な,|C1: 安宁；平静,|C2: 冷静的|,"|E: calm, tranquil, serene, still, quiet, peaceful;peacefully, tranquilly, calmly;tranquility, calmness, peacefulness|"
+|ES: kviet,|J: 静かな,|C1: 平静，寂静；安详；温和,|C2: 安静的|,"|E: calm, quiet, placid;quietly, leisurely, softly, tamely;calm, quiet, silence, rest|"
+|ES: komfort,|J: 安楽な,|C1: 舒服，安逸,|C2: 舒适|,"|E: at ease, comfortable, cozy, snug;comfortably;to comfort, solace;comfort, ease, sense of well-being|"
+|ES: pac,|J: 平和,|C1: 和平，平安,|C2: 和平|,"|E: peaceful;amicably, peaceably, peacefully;peace|"
+|ES: moder,|J: 適度の,|C1: 适度，有节制；适中，中等,|C2: 现代的|,"|E: moderate, reasonable;modestly;moderation|"
+|ES: ekvilibr,|J: 平衡,|C1: 平衡，均衡,|C2: 平衡|,"|E: balanced;to be in balance, be in equilibrium, poise;balance, equilibrium|"
+|ES: kompromis,|J: 妥協,,|C2: 妥协|,"|E: to compromise;accommodation, compromise|"
+|ES: agord,|J: 調和,|C1: （各种乐器的）和音,|C2: 环境|,"|E: in unison;to configure, customize, tune, attune, set, adjust;accord, agreement, consonance, customization, options, setup, settings, mood, tuning, preference|"
+|ES: harmoni,|J: 調和,|C1: 谐音，和音；和谐，融洽,|C2: 和谐|,"|E: harmonious;harmoniously;to accord, fit together, harmonize;harmony|"
+|ES: akord,|J: 一致,|C1: 融洽，协调，一致，和弦,|C2: 符合|,"|E: compatible, consistent;to (be in) accord, agree, match;accord, accordance, agreement, chord, concord, concurrence, concurrency, consonance|"
+|ES: konkord,|J: 和合,|C1: 完全一致，充分融洽,|C2: 和睦|,"|E: concordant, harmonious;harmoniously;to agree;accord, concord, harmony, agreement|"
+|ES: virt,|J: 徳,|C1: 德，善，品德，美德,|C2: 美德|,"|E: pure, virtuous;virtuously;morality, vice, virtue|"
+|ES: konscienc,|J: 良心,|C1: 良心，道德心,|C2: 良心|,"|E: conscientious, scrupulous, faithful, upright, honorable;conscience, inner voice, moral sense|"
+|ES: etiket,|J: 礼儀,,|C2: 标签|,"|E: code of conduct, etiquette, protocol, rules of behavior; label, tag|"
+|ES: moral,|J: 道徳,|C1: 伦理道德；道德（规范）,|C2: 道德|,|E: moral;morally;morals|
+|ES: etik,|J: 倫理学,,|C2: 伦理|,"|E: ethical;ethically;ethic, ethics, morals|"
+|ES: ĝentil,|J: 礼儀正しい,|C1: 彬彬有礼,|C2: 有礼貌的|,"|E: polite, gentle, civil, courteous, well-mannered, polished, refined;gently, politely|"

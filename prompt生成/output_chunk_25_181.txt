@@ -1,0 +1,92 @@
+
+
+## 1. エスペラント語根リストについて
+以下に示すのは、エスペラントの「語根」リストです（語根ではないものは末尾に # が付記されています）。  
+各行には左から順に、  
+1. エスペラント語根(ES)  
+2. 信頼できる日本語訳(J)  
+3. 信頼できる中国語訳(C1)(抜け落ち多数あり)  
+4. 信頼できない中国語訳(C2)(google翻訳)  
+5. 信頼できる英語訳(E)  
+が「|」で区切られて示されています。
+
+## 2. タスク概要
+- 目的: 与えられたエスペラント語根全てに対して、リストの順に、簡体字中国語の漢字(基本的に1文字)を割り当てる。  
+- ただし:
+  - 1文字での割当が難しい、あるいは多画数・低頻度・汎用性が低いなど、学習コストが高すぎる場合は、2文字以上の熟語を割り当ててもよい。
+  - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+## 3. エスペラント語根への漢字割当時に考慮してほしい4つの条件
+1. **漢字・偏旁の種類の総数をできるだけ抑える**  
+   - 漢字や偏旁の重複使用は大歓迎。学習者の負担を減らすためにも、可能な限り同じ漢字や偏旁を使い回してほしい。
+   (同じ漢字については、後で上付き文字などによって区別する予定なので、現段階では一切気にせずどんどん同じ漢字や偏旁を使い回してほしい。)
+
+
+2. **日本人・中国人双方が“意味を連想しやすい”簡体字であること**  
+   - 簡体字を用いるが、日本人にとっても意味がつかみやすい漢字や熟語を優先して選んでほしい。
+
+3. **できるだけ画数が少ない漢字を優先する**  
+   - 非漢字圏の学習者の負担を減らすために、筆画の多い漢字より画数の少ない漢字を優先して割り当てたい。
+
+4. **1文字割当が困難なら、既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討し、それでも難しければ割当を行わない**  
+   - まず1文字で割当できないかを検討し、それが困難な場合は他のエスペラント語根に対して割り当てられている(もしくは別の回も含む他の箇所での割当に用いられるであろう、汎用性が高い)漢字や偏旁を組み合わせた熟語を検討する。  
+   - それでもなお困難な場合、当該エスペラント語根への漢字割当は「未対応」のままとしても構わない。
+
+5. **多画数・低頻度・汎用性の低い漢字1文字を強引に割り当てるより、少画数・高頻度・汎用性の高い漢字のみを組み合わせた熟語を優先する**
+
+   - たとえ漢字1文字で意味を表せても、その漢字の学習コストが高すぎる場合は2文字以上の熟語の方が望ましい。
+   - 割当後の漢字・偏旁の種類の総数を抑えるためにも、なるべく多くの語根に転用しやすい（汎用性の高い）漢字や偏旁の組み合わせを優先する。
+
+## 4. 作業の進め方・注意点
+- 慎重かつ丁寧に、一切ミスがないよう検討してほしい。  
+- リストの順に、エスペラント語根への割当を進めてほしい。
+
+
+## 5. 各エスペラント語根への対応漢字を提案する際の推奨フォーマット  
+**各エスペラント語根につき、以下の4項目(3と4は可能な範囲で)をスラッシュ「/」区切りで提示してください(スプレッドシート上での列分割を容易にするため)。1行につき1語根の対応を示す形式です。**
+
+1. **エスペラント語根**  
+2. **提案する簡体字(または熟語)**  
+3. **(可能であれば)その漢字や熟語を選んだ理由や根拠**  
+4. **(可能であれば)既出の(または今後割当に用いられるであろう、汎用性が高い)漢字や偏旁との関係、学習コストに関する考察**  
+
+### 5.1 出力例(イメージ)  
+```
+エスペラント語根1/提案漢字/選定理由/学習コストに関する考察
+エスペラント語根2/提案熟語/選定理由/学習コストに関する考察
+...
+```
+
+## 6. まとめ・最終要請
+以上の指示に基づき、以下のエスペラント語根(各回約25件)全てに対する簡体字中国語の漢字や熟語の割当を、リストの順に、誤りがないよう慎重に丁寧に進めてください。  
+学習コスト(漢字・偏旁の種類の総数)を極力抑えつつ、かつ日本語圏・中国語圏いずれの話者も概ね納得できる形での割当を、丁寧に提案・検討してください。  
+
+どうぞよろしくお願いします。
+
+# エスペラント語根リスト⇓
+
+|ES: manier,|J: やり方,|C1: 方法，作风；[~oj]礼貌，风俗,|C2: 方式|,"|E: fashion, manner, mode, way|"
+|ES: metod,|J: 方法,|C1: 方法，办法，法,|C2: 方法|,|E: methodical;methodically;method|
+|ES: direkt,|J: 方向,|C1: 方向，方位,|C2: 直接的|,"|E: directional;directly;to conduct, direct, drive, guide, manage, refer, steer, govern;direction|"
+|ES: konduk,|J: (を)導く,|C1: 带领，引领,|C2: 带领|,"|E: to conduct, guide, lead, drive (vehicle);conduct, lead, leadership|"
+|ES: gvid,|J: (を)案内する,|C1: 领路；引导,|C2: 指导|,"|E: leading;to conduct, direct, drive, guide, lead, show the way;guide, pilot|"
+|ES: preskrib,|J: [医](を)処方する,|C1: 规定，指示；开（药方），医嘱,|C2: 处方|,"|E: prescriptive;prescriptive;to order, prescribe, stipulate;directions, orders, regulation, statement, prescription|"
+|ES: komand,|J: [軍](を)指揮する,|C1: 统帅，指挥，命令，控制,|C2: 命令|,"|E: peremptory;to command, be in command, order;command, instruction, mandate, order|"
+|ES: ordon,|J: (を)命令する,|C1: 命令，吩咐,|C2: 命令|,"|E: imperative;to command, order, tell, direct, prescribe;command, order, commandment, edict, ordinance, precept|"
+|ES: instrukci,|J: 指令,,|C2: 操作说明|,"|E: to instruct;command, directions, instruction, orders, statement|"
+|ES: kre,|J: (を)創造する,|C1: 创造，开创,|C2: 创造|,"|E: creative;to compose, create, produce, make;creation|"
+|ES: konstru,|J: (を)建造する,|C1: 建筑；构成,|C2: 建造|,"|E: constructive;to build, construct, craft, erect, establish;construction, erection|"
+|ES: fond,|J: (を)創立する,|C1: 建立；创建，创办,|C2: 基础|,"|E: foundational;to erect, establish, form, found, institute;establishment|"
+|ES: establ,|J: (を)創立する,|C1: 设立,|C2: 已确立的|,"|E: to erect, establish;establishment|"
+|ES: struktur,|J: 構造,|C1: 结构，构造，组织,|C2: 结构|,"|E: structural;structurally;to structure, format (disk);structure, format, layout|"
+|ES: aranĝ,|J: (を)整える,|C1: 整理，布置；安排,|C2: 安排|,"|E: to arrange, adjust, array, fix up;accommodation, adjustment, arrangement, layout, format|"
+|ES: organiz,|J: (を)組織する,|C1: 组织,|C2: 组织|,|E: organizational;to organize;organization|
+|ES: rekompenc,|J: 報酬,|C1: 报酬，报偿，奖赏,|C2: 报酬|,"|E: as a recompense;to compensate, reward, recompense, remunerate, requite;compensation, reward|"
+|ES: honorari,|J: 謝礼金,,|C2: 尊敬|,"|E: to pay a fee, pay a honorarium, remunerate;fee, honorarium, remuneration|"
+|ES: pag,|J: (を)支払う,|C1: 付钱；偿还,|C2: 支付|,"|E: remunerative;to pay;payment, wages|"
+|ES: salajr,|J: 給料,|C1: 工资，报酬,|C2: 薪水|,"|E: to employ, pay a salary;salary, wage, wages, stipend|"
+|ES: kotiz,|J: (会費などを)払う,,|C2: 费用|,"|E: to contribute, subscribe;contribution, dues, subscription, share, quota|"
+|ES: rent,|J: 賃貸料,|C1: 租（金）；年金，息金,|C2: 租|,"|E: annuity, dividend, income, return, revenue|"
+|ES: donac,|J: 贈り物,|C1: 礼品,|C2: 礼物|,"|E: as a gift, gratis;to donate, give, grant, present, bestow;gift, present, donation, giveaway|"
+|ES: premi,|J: 賞品,|C1: 奖品,|C2: 按|,"|E: at a premium;to award a prize;award, premium, prize, reward|"
+|ES: almoz,|J: 施し物,|C1: 布施，救济,|C2: 施舍|,"|E: to beg;alms, charity, handout, charitable relief|"
