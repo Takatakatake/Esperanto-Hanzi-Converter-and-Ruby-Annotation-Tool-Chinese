@@ -340,6 +340,20 @@ with st.expander("示例文件列表（点击下载）"):
             mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
         )
 
+    st.markdown("""
+    **Specimena Excel n-ro 1 (14-lingva listo de Esperantaj radikoj & tradukaj rubioj)**  
+    Temas pri Excel-folio kun 14 lingvoj (japana, ĉina, korea, angla, rusa, hispana, itala,
+    franca, germana, araba, hindia, pola, vjetnama, indonezia) kiel priskribaj tradukoj
+    aŭ rubioj al ĉirkaŭ 4736 Esperanto-radikoj.
+    """)
+    with open('./Appの运行に使用する各类文件/Kreado de rubenaj komentoj en 14 lingvoj (日本語, 中文, 한국어, English, Русский, español, italiano, français, Deutsch, العربية, हिन्दी, polski, Tiếng Việt, Bahasa Indonesia) respondaj al listo de 4736 Esperant.xlsx', "rb") as file:
+        st.download_button(
+            label="Elŝuti Specimenan Excel n-ro 1 (14-lingva listo de Esperantaj radikoj & tradukoj)",
+            data=file,
+            file_name="ListoDe14LingvojPorEsperantajRadikoj_TradukRubioj.xlsx",  # ★ファイル名をエスペラント化
+            mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+        )
+
 st.write("---")
 
 # ---------------------------------------------------------------------
