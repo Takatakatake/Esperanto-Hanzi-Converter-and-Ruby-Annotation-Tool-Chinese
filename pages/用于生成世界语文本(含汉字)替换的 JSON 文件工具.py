@@ -346,7 +346,7 @@ with st.expander("示例文件列表（点击下载）"):
     franca, germana, araba, hindia, pola, vjetnama, indonezia) kiel priskribaj tradukoj
     aŭ rubioj al ĉirkaŭ 4736 Esperanto-radikoj.
     """)
-    with open('./Appの运行に使用する各类文件/Kreado de rubenaj komentoj en 14 lingvoj (日本語, 中文, 한국어, English, Русский, español, italiano, français, Deutsch, العربية, हिन्दी, polski, Tiếng Việt, Bahasa Indonesia) respondaj al listo de 4736 Esperant.xlsx', "rb") as file:
+    with open('./Appの运行に使用する各类文件/RubenajKomentoj-14-[ja-zh-ko-en-ru-es-it-fr-de-ar-hi-pl-vi-id]-Listo4736-EO.xlsx', "rb") as file:
         st.download_button(
             label="Elŝuti Specimenan Excel n-ro 1 (14-lingva listo de Esperantaj radikoj & tradukoj)",
             data=file,
